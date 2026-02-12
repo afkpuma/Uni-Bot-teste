@@ -1,13 +1,6 @@
 from fastapi import APIRouter
 from app.services.kommo_service import KommoService
-from pydantic import BaseModel
-
-# Criamos um "molde" simples para garantir que o dado chegue certo
-class LeadSchema(BaseModel):
-    nome: str
-    price: int
-
-
+from app.schemas.lead_schema import LeadSchema
 
 
 router = APIRouter()
