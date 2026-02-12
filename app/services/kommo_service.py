@@ -1,15 +1,17 @@
+from typing import Optional
+
 import requests
 from app.core.config import settings
 
 class KommoService:
-    def __init__(self):
+    def __init__(self) -> None:
         self.headers = {
             "Authorization": f"Bearer {settings.KOMMO_TOKEN}",
             "Content-Type": "application/json"
         }
         self.base_url = settings.KOMMO_URL
 
-    def get_leads(self, query: str):
+    def get_leads(self, query: Optional[str] = None) -> dict:
         """Busca leads na Kommo. Se tiver query, filtra."""
         url = f"{self.base_url}/api/v4/leads"
         params = {}
@@ -24,7 +26,7 @@ class KommoService:
         else:
             return {"error": f"Erro {response.status_code}", "details": response.text}
 
-    def get_contacts(self, query: str = None, page: int = None, limit: int = None):
+    def get_contacts(self, query: Optional[str] = None, page: Optional[int] = None, limit: Optional[int] = None) -> dict:
         """Busca contatos na Kommo. Se tiver query, filtra."""
         url = f"{self.base_url}/api/v4/contacts"
         params = {}
@@ -43,7 +45,7 @@ class KommoService:
         else:
             return {"error": f"Erro {response.status_code}", "details": response.text}
 
-    def get_contact_by_id(self, contact_id: int):
+    def get_contact_by_id(self, contact_id: int) -> dict:
         """Busca um contato específico por ID na Kommo."""
         url = f"{self.base_url}/api/v4/contacts/{contact_id}"
 
@@ -54,7 +56,7 @@ class KommoService:
         else:
             return {"error": f"Erro {response.status_code}", "details": response.text}
 
-    def create_lead(self, name_lead: str, price_course: int):
+    def create_lead(self, name_lead: str, price_course: int) -> dict:
         url = f"{self.base_url}/api/v4/leads"
 
         #kommo exige que os dados venham dentro de uma lista,
