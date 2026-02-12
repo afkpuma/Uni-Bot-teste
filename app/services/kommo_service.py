@@ -54,7 +54,7 @@ class KommoService:
         else:
             return {"error": f"Erro {response.status_code}", "details": response.text}
 
-    def create_lead(self, name_lead: str):
+    def create_lead(self, name_lead: str, price_course: int):
         url = f"{self.base_url}/api/v4/leads"
 
         #kommo exige que os dados venham dentro de uma lista,
@@ -62,7 +62,7 @@ class KommoService:
 
         payload = [{
             "name": name_lead,
-            "price": 0,
+            "price": price_course,
         }]        
 
         response = requests.post(url, headers=self.headers, json=payload)
