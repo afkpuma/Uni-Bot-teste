@@ -53,3 +53,21 @@ class KommoService:
             return response.json()
         else:
             return {"error": f"Erro {response.status_code}", "details": response.text}
+
+    def create_lead(self, name_lead: str):
+        url = f"{self.base_url}/api/v4/leads"
+
+        #kommo exige que os dados venham dentro de uma lista,
+        # mesmo que seja apenas um lead.
+
+        payload = [{
+            "name": name_lead,
+            "price": 0,
+        }]        
+
+        response = requests.post(url, headers=self.headers, json=payload)
+        
+        if response.status_code == 200:
+            return response.json()
+        else:
+            return {"error": f"Erro {response.status_code}", "details": response.text}
