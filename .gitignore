@@ -1,6 +1,6 @@
 .env
 .venv
-app/__pycache__
+__pycache__/
 .DS_Store
 .env.example
 .env.prod
