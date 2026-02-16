@@ -24,7 +24,8 @@ async def receive_webhook(request: Request) -> dict:
         # Log para debug (INFO aparece no terminal)
         logger.info(f"🔔 Webhook recebido! Tipo: '{event_type}'")
 
-        if event_type != "messages.upsert":
+        # Comparação case-insensitive: Evolution API envia "MESSAGES_UPSERT"
+        if event_type.upper() != "MESSAGES_UPSERT":
             return {"status": "ignored", "event": event_type}
 
         # Extrai dados da mensagem
