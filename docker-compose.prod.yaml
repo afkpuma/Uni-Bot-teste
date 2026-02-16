@@ -1,0 +1,101 @@
+version: '3.9'
+
+networks:
+  rede_interna:
+    driver: bridge
+    name: rede_interna
+
+volumes:
+  evolution_db_data:
+  evolution_redis_data:
+  evolution_instances:
+
+services:
+  # --------------------------------------------------------------------
+  # 1. NOVO UNI-BOT (Python + FastAPI)
+  # --------------------------------------------------------------------
+  uni_bot:
+    container_name: uni_bot_app
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8000:8000" # Porta para receber Webhooks
+    env_file:
+      - .env
+    networks:
+      - rede_interna
+    depends_on:
+      evolution:
+        condition: service_started
+
+  # --------------------------------------------------------------------
+  # 2. EVOLUTION API (Mantida do projeto antigo)
+  # --------------------------------------------------------------------
+  evolution:
+    image: evoapicloud/evolution-api:latest
+    container_name: evolution_api
+    restart: always
+    ports:
+      - "8081:8080" # Painel acessível na porta 8081
+    networks:
+      - rede_interna
+    volumes:
+      - evolution_instances:/evolution/instances
+    env_file:
+      - .env
+    environment:
+      - SERVER_TYPE=http
+      - SERVER_PORT=8080
+      - SERVER_URL=http://admin.boteletroclima.cloud:8081
+      - DOCKER_ENV=true
+      - AUTHENTICATION_TYPE=apikey
+      - AUTHENTICATION_API_KEY=${EVOLUTION_API_TOKEN}
+      - DATABASE_ENABLED=true
+      - DATABASE_PROVIDER=postgresql
+      - DATABASE_CONNECTION_URI=postgresql://admin_zap:${POSTGRES_PASSWORD}@postgres:5432/evolution
+      - CACHE_REDIS_ENABLED=true
+      - CACHE_REDIS_URI=redis://redis:6379/0
+      
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  # --------------------------------------------------------------------
+  # 3. BANCO DE DADOS (Obrigatório para Evolution)
+  # --------------------------------------------------------------------
+  postgres:
+    image: postgres:15-alpine
+    container_name: evolution_postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=admin_zap
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=evolution
+    volumes:
+      - evolution_db_data:/var/lib/postgresql/data
+    networks:
+      - rede_interna
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin_zap -d evolution"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # --------------------------------------------------------------------
+  # 4. REDIS (Cache)
+  # --------------------------------------------------------------------
+  redis:
+    image: redis:7-alpine
+    container_name: evolution_redis
+    restart: always
+    volumes:
+      - evolution_redis_data:/data
+    networks:
+      - rede_interna
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
