@@ -1,0 +1,25 @@
+# Ambiente virtual e cache Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Arquivos de ambiente (sensíveis)
+.env
+.env.*
+
+# Git e IDE
+.git/
+.gitignore
+.DS_Store
+.vscode/
+.idea/
+
+# Docker (evita loop de build)
+Dockerfile
+docker-compose*.yaml
+
+# Documentação (não precisa no container)
+planning/
+rules.md
+README.md
