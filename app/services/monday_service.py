@@ -15,18 +15,18 @@ class MondayService:
     ]
 
     def __init__(self) -> None:
-        self.headers = {
+        self.headers: dict = {
             "Authorization": settings.MONDAY_TOKEN,
             "Content-Type": "application/json"
         }
-        self.api_url = settings.MONDAY_URL
+        self.api_url: str = settings.MONDAY_URL
 
     def send_query(self, query: str) -> dict:
         """
         Função auxiliar que empacota o GraphQL e manda pro Monday.
         """
-        data = {'query': query}
-        response = requests.post(self.api_url, json=data, headers=self.headers)
+        data: dict = {'query': query}
+        response: requests.Response = requests.post(self.api_url, json=data, headers=self.headers)
         
         if response.status_code == 200:
             return response.json()
@@ -75,7 +75,7 @@ class MondayService:
         }
         """ % board_id
 
-        resultado = self.send_query(query)
+        resultado: dict = self.send_query(query)
         return resultado["data"]["boards"][0]["items_page"]["items"]
 
     def update_status(self, item_id: int, status_label: str, board_id: int = None) -> dict:
@@ -104,7 +104,7 @@ class MondayService:
         if board_id is None:
             board_id = settings.MONDAY_BOARD_ID
 
-        column_value = json.dumps({"label": status_label})
+        column_value: str = json.dumps({"label": status_label})
 
         query = '''
         mutation {
