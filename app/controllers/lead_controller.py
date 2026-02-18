@@ -5,7 +5,7 @@ from app.services.kommo_service import KommoService
 from app.schemas.lead_schema import LeadSchema
 
 
-router = APIRouter()
+router: APIRouter = APIRouter()
 
 
 @router.post("/leads")
