@@ -9,6 +9,7 @@ volumes:
   evolution_db_data:
   evolution_redis_data:
   evolution_instances:
+  flowise_data:
 
 services:
   # --------------------------------------------------------------------
@@ -99,3 +100,22 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+
+  # --------------------------------------------------------------------
+  # 5. FLOWISE AI (Cérebro Criativo)
+  # --------------------------------------------------------------------
+  flowise:
+    image: flowiseai/flowise:latest
+    container_name: flowise
+    restart: always
+    ports:
+      - "3000:3000"
+    networks:
+      - rede_interna
+    volumes:
+      - flowise_data:/root/.flowise
+    environment:
+      - PORT=3000
+      - FLOWISE_USERNAME=admin
+      - FLOWISE_PASSWORD=BatataQuente2026
+      - DEBUG=true
