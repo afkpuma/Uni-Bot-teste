@@ -3,7 +3,7 @@ from typing import Optional
 from fastapi import APIRouter, Depends
 from app.services.kommo_service import KommoService
 
-router = APIRouter()
+router: APIRouter = APIRouter()
 
 @router.get("/contacts")
 def read_contacts(busca: Optional[str] = None, page: Optional[int] = None, limit: Optional[int] = None, service: KommoService = Depends(KommoService)) -> dict:
