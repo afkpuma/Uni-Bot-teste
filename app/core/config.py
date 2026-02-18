@@ -9,12 +9,12 @@ class Settings(BaseSettings):
     MONDAY_BOARD_ID: int = 18399984137
 
     # Flowise AI
-    FLOWISE_API_URL: str = "http://76.13.66.202:3000/api/v1/prediction/332e1083-6c00-4dfd-92f1-87d0f9d90792"
+    FLOWISE_API_URL: str
 
     # Evolution API
-    EVOLUTION_API_URL: str = "http://evolution_api:8080"
-    EVOLUTION_API_TOKEN: str = "BatataQuente2026"
-    INSTANCE_NAME: str = "UniBot"
+    EVOLUTION_API_URL: str
+    EVOLUTION_API_TOKEN: str
+    INSTANCE_NAME: str
 
     class Config:
         env_file = ".env"
