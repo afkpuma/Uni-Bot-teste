@@ -1,24 +1,13 @@
 """
 Controller de Webhook — Recebe eventos da Evolution API (WhatsApp).
-Fluxo: Ouvir (Evolution) → Pensar (Flowise) → Falar (Evolution)
+Responsável APENAS por receber a requisição, extrair dados e delegar ao service.
 """
 import logging
 from fastapi import APIRouter, Request, BackgroundTasks
-from app.services.flowise_service import FlowiseService
 from app.services.evolution_service import EvolutionService
 
 logger = logging.getLogger("uvicorn")
 router = APIRouter()
-
-
-async def process_message(remote_jid: str, user_message: str):
-    """Função em background para não travar o webhook"""
-
-    # 1. Obter resposta da IA
-    ai_response = await FlowiseService.generate_response(user_message, remote_jid)
-
-    # 2. Enviar resposta no WhatsApp
-    await EvolutionService.send_message(remote_jid, ai_response)
 
 
 @router.post("/webhook")
@@ -46,10 +35,10 @@ async def receive_webhook(request: Request, background_tasks: BackgroundTasks):
             if user_message and remote_jid:
                 logger.info(f"📩 MENSAGEM DE {push_name}: {user_message}")
 
-                # 🔥 AQUI ESTÁ A MÁGICA:
-                # Processamos em background para responder rápido ao webhook (200 OK)
-                # enquanto a IA pensa.
-                background_tasks.add_task(process_message, remote_jid, user_message)
+                # Processa em background para responder rápido ao webhook (200 OK)
+                background_tasks.add_task(
+                    EvolutionService.process_incoming_message, remote_jid, user_message
+                )
 
                 return {"status": "processing"}
 

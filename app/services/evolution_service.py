@@ -1,6 +1,7 @@
 import httpx
 import logging
 from app.core.config import settings
+from app.services.flowise_service import FlowiseService
 
 logger = logging.getLogger("uvicorn")
 
@@ -31,3 +32,13 @@ class EvolutionService:
                     logger.info(f"📤 Resposta enviada para {remote_jid}")
         except Exception as e:
             logger.error(f"❌ Erro ao conectar na Evolution API: {e}")
+
+    @staticmethod
+    async def process_incoming_message(remote_jid: str, user_message: str) -> None:
+        """Orquestra o fluxo: recebe mensagem → pensa (Flowise) → responde (WhatsApp)."""
+
+        # 1. Obter resposta da IA
+        ai_response = await FlowiseService.generate_response(user_message, remote_jid)
+
+        # 2. Enviar resposta no WhatsApp
+        await EvolutionService.send_message(remote_jid, ai_response)
