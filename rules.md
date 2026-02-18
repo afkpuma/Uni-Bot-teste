@@ -25,7 +25,13 @@ NENHUMA linha de código é escrita sem antes passar pelas fases 1 e 2.
 ---
 
 ## 🛡️ Diretrizes de Código (The Zen)
-1.  **Tipagem Forte:** Todo método DEVE ter Type Hints (`def func(a: int) -> dict:`).
+1.  **Tipagem Forte (Type Hints Obrigatórios):**
+    * Todo método/função DEVE ter type hints nos **parâmetros** e no **retorno** (`def func(a: int) -> dict:`).
+    * Todas as **variáveis locais** devem ser tipadas (`url: str = "..."`, `payload: dict = {}`).
+    * **Variáveis de módulo** devem ser tipadas (`logger: logging.Logger`, `router: APIRouter`).
+    * **Variáveis de instância** (`self.x`) devem ser tipadas no `__init__` (`self.headers: dict = {}`).
+    * Usar `str | None` para valores opcionais (Python 3.10+). Evitar `Optional[]` do `typing`.
+    * Respostas HTTP devem ser tipadas como `response: requests.Response` ou `response: httpx.Response`.
 2.  **Zero Hardcode:** Tokens e URLs vêm de `app/core/config.py`.
 3.  **Tratamento de Erros:** Sair graciosamente. Se o Monday falhar, o bot continua rodando.
 4.  **Logs:** Usar `logger.info()` em vez de `print()`.
