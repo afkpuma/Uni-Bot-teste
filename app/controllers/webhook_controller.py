@@ -6,31 +6,33 @@ import logging
 from fastapi import APIRouter, Request, BackgroundTasks
 from app.services.evolution_service import EvolutionService
 
-logger = logging.getLogger("uvicorn")
-router = APIRouter()
+logger: logging.Logger = logging.getLogger("uvicorn")
+router: APIRouter = APIRouter()
 
 
 @router.post("/webhook")
-async def receive_webhook(request: Request, background_tasks: BackgroundTasks):
+async def receive_webhook(request: Request, background_tasks: BackgroundTasks) -> dict:
     try:
-        payload = await request.json()
-        event_type = payload.get("type") or payload.get("event")
+        payload: dict = await request.json()
+        event_type: str | None = payload.get("type") or payload.get("event")
 
         if event_type == "messages.upsert":
-            data = payload.get("data", {})
-            key = data.get("key", {})
+            data: dict = payload.get("data", {})
+            key: dict = data.get("key", {})
 
             # Ignora mensagens enviadas por mim mesmo (para evitar loop infinito)
             if key.get("fromMe", False):
                 return {"status": "ignored_from_me"}
 
-            message_data = data.get("message", {})
-            remote_jid = key.get("remoteJid")
-            push_name = data.get("pushName")
+            message_data: dict = data.get("message", {})
+            remote_jid: str | None = key.get("remoteJid")
+            push_name: str | None = data.get("pushName")
 
             # Extrai texto
-            user_message = message_data.get("conversation") or \
-                           message_data.get("extendedTextMessage", {}).get("text")
+            user_message: str | None = (
+                message_data.get("conversation")
+                or message_data.get("extendedTextMessage", {}).get("text")
+            )
 
             if user_message and remote_jid:
                 logger.info(f"📩 MENSAGEM DE {push_name}: {user_message}")
