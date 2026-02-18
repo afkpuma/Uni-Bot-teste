@@ -1,59 +1,60 @@
 """
 Controller de Webhook — Recebe eventos da Evolution API (WhatsApp).
+Fluxo: Ouvir (Evolution) → Pensar (Flowise) → Falar (Evolution)
 """
 import logging
-from fastapi import APIRouter, Request
+from fastapi import APIRouter, Request, BackgroundTasks
+from app.services.flowise_service import FlowiseService
+from app.services.evolution_service import EvolutionService
 
-# Configura o logger para aparecer nos logs do Docker
 logger = logging.getLogger("uvicorn")
-
 router = APIRouter()
 
+
+async def process_message(remote_jid: str, user_message: str):
+    """Função em background para não travar o webhook"""
+
+    # 1. Obter resposta da IA
+    ai_response = await FlowiseService.generate_response(user_message)
+
+    # 2. Enviar resposta no WhatsApp
+    await EvolutionService.send_message(remote_jid, ai_response)
+
+
 @router.post("/webhook")
-async def receive_webhook(request: Request) -> dict:
-    """
-    Endpoint que recebe eventos da Evolution API.
-    Filtra apenas eventos do tipo 'messages.upsert' (mensagens recebidas).
-    """
+async def receive_webhook(request: Request, background_tasks: BackgroundTasks):
     try:
-        payload: dict = await request.json()
-        
-        # CORREÇÃO: Evolution usa 'type' ou 'event' dependendo da versão. 
-        event_type = payload.get("type") or payload.get("event") or ""
+        payload = await request.json()
+        event_type = payload.get("type") or payload.get("event")
 
-        # Log para debug (INFO aparece no terminal)
-        logger.info(f"🔔 Webhook recebido! Tipo: '{event_type}'")
+        if event_type == "messages.upsert":
+            data = payload.get("data", {})
+            key = data.get("key", {})
 
-        # Comparação case-insensitive: Evolution API envia "MESSAGES_UPSERT"
-        if event_type.upper() != "MESSAGES_UPSERT":
-            return {"status": "ignored", "event": event_type}
+            # Ignora mensagens enviadas por mim mesmo (para evitar loop infinito)
+            if key.get("fromMe", False):
+                return {"status": "ignored_from_me"}
 
-        # Extrai dados da mensagem
-        data: dict = payload.get("data", {})
-        key: dict = data.get("key", {})
-        message_data: dict = data.get("message", {})
+            message_data = data.get("message", {})
+            remote_jid = key.get("remoteJid")
+            push_name = data.get("pushName")
 
-        remote_jid: str = key.get("remoteJid", "desconhecido")
-        push_name: str = data.get("pushName", "Sem Nome")
-        
-        # Extrai o texto (lógica para Android/iPhone)
-        text: str = message_data.get("conversation", "")
-        if not text:
-            text = message_data.get("extendedTextMessage", {}).get("text", "")
+            # Extrai texto
+            user_message = message_data.get("conversation") or \
+                           message_data.get("extendedTextMessage", {}).get("text")
 
-        if not text:
-            logger.info(f"⚠️ Mensagem sem texto de {push_name}")
-            return {"status": "no_text"}
+            if user_message and remote_jid:
+                logger.info(f"📩 MENSAGEM DE {push_name}: {user_message}")
 
-        logger.info(f"📩 MENSAGEM DE {push_name} ({remote_jid}): {text}")
+                # 🔥 AQUI ESTÁ A MÁGICA:
+                # Processamos em background para responder rápido ao webhook (200 OK)
+                # enquanto a IA pensa.
+                background_tasks.add_task(process_message, remote_jid, user_message)
 
-        return {
-            "status": "received",
-            "from": remote_jid,
-            "name": push_name,
-            "text": text,
-        }
-        
+                return {"status": "processing"}
+
+        return {"status": "ignored"}
+
     except Exception as e:
-        logger.error(f"❌ Erro ao processar webhook: {e}")
+        logger.error(f"❌ Erro: {e}")
         return {"status": "error"}
