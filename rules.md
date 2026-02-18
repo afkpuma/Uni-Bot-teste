@@ -30,8 +30,11 @@ NENHUMA linha de código é escrita sem antes passar pelas fases 1 e 2.
 3.  **Tratamento de Erros:** Sair graciosamente. Se o Monday falhar, o bot continua rodando.
 4.  **Logs:** Usar `logger.info()` em vez de `print()`.
 
-## 📁 Estrutura de Pastas
+## 📁 Estrutura de Pastas e Separação de Responsabilidades
 /app
-  /services  -> Lógica de Integração (Kommo, Monday)
-  /core      -> Configs e Constants (IDs das colunas)
-  /planning  -> Documentação RPI (Onde a mágica começa)
+  /controllers -> Apenas rotas HTTP. Recebe a requisição, extrai dados e delega ao service. ZERO lógica de negócio ou orquestração.
+  /services    -> Toda lógica de negócio, orquestração e integração com APIs externas (Kommo, Monday, Flowise, Evolution).
+  /core        -> Configs e Constants (IDs das colunas)
+  /planning    -> Documentação RPI (Onde a mágica começa)
+
+> **Regra de Ouro:** Se uma função faz mais do que extrair dados da requisição e chamar um service, ela NÃO pertence ao controller. Mova para o service correspondente.
