@@ -2,7 +2,7 @@ import httpx
 import logging
 from app.core.config import settings
 
-logger = logging.getLogger("uvicorn")
+logger: logging.Logger = logging.getLogger("uvicorn")
 
 
 class FlowiseService:
@@ -10,13 +10,13 @@ class FlowiseService:
     async def generate_response(message: str, remote_jid: str) -> str:
         """Envia a mensagem para o Flowise e retorna a resposta da IA."""
         try:
-            payload = {
+            payload: dict = {
                 "question": message,
                 "sessionId": remote_jid
             }
 
             async with httpx.AsyncClient() as client:
-                response = await client.post(
+                response: httpx.Response = await client.post(
                     settings.FLOWISE_API_URL,
                     json=payload,
                     timeout=30.0  # IA pode demorar um pouco para pensar
@@ -24,7 +24,7 @@ class FlowiseService:
                 response.raise_for_status()
 
                 # Flowise retorna um JSON: {"text": "Resposta da IA", ...}
-                result = response.json()
+                result: dict = response.json()
                 return result.get("text", "Desculpe, não consegui processar sua resposta.")
 
         except Exception as e:
