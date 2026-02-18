@@ -7,10 +7,13 @@ logger = logging.getLogger("uvicorn")
 
 class FlowiseService:
     @staticmethod
-    async def generate_response(message: str) -> str:
+    async def generate_response(message: str, remote_jid: str) -> str:
         """Envia a mensagem para o Flowise e retorna a resposta da IA."""
         try:
-            payload = {"question": message}
+            payload = {
+                "question": message,
+                "sessionId": remote_jid
+            }
 
             async with httpx.AsyncClient() as client:
                 response = await client.post(

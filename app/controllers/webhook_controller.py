@@ -15,7 +15,7 @@ async def process_message(remote_jid: str, user_message: str):
     """Função em background para não travar o webhook"""
 
     # 1. Obter resposta da IA
-    ai_response = await FlowiseService.generate_response(user_message)
+    ai_response = await FlowiseService.generate_response(user_message, remote_jid)
 
     # 2. Enviar resposta no WhatsApp
     await EvolutionService.send_message(remote_jid, ai_response)
