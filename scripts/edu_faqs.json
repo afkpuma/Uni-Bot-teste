@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "versao": "1.0",
+    "data_geracao": "2025-12-19",
+    "total": 10
+  },
+  "perguntas": [
+    {
+      "id": 1,
+      "pergunta": "O desconto é para o curso todo?",
+      "resposta": "Sim! O desconto (30% ou 40% + 10% pontualidade) é válido durante TODO o curso. Existe reajuste anual (IGPM/INPC, 6-11%) aplicado sobre o valor JÁ COM desconto."
+    },
+    {
+      "id": 2,
+      "pergunta": "Como funcionam as provas?",
+      "graduacao_tecnicos": "Presenciais no polo, última semana da disciplina, você agenda dia/horário, no laboratório de informática.",
+      "pos_profissionalizantes": "100% online pelo AVA, no conforto de casa."
+    },
+    {
+      "id": 3,
+      "pergunta": "Qual a estrutura das disciplinas?",
+      "ead": {
+        "disciplina": "5 semanas",
+        "simultaneas": "1 por vez",
+        "por_modulo": 2,
+        "dedicacao": "2-3 horas/dia"
+      },
+      "semipresencial": {
+        "disciplinas": "2-3 simultâneas",
+        "modulo": "~3 meses",
+        "praticas": "A partir do 3º ano, 1x/semana, noturno"
+      }
+    },
+    {
+      "id": 4,
+      "pergunta": "Posso trancar ou cancelar?",
+      "resposta": "Sim, a qualquer momento. Vir ao polo e assinar o termo.",
+      "trancamento": "Pausa o curso (até 2 anos para voltar)",
+      "cancelamento": "Encerra definitivamente"
+    },
+    {
+      "id": 5,
+      "pergunta": "E se eu reprovar em uma disciplina?",
+      "nota_minima": 60,
+      "segunda_oportunidade": "Nova prova com valor total",
+      "reprovacao": "Disciplina volta no mesmo módulo do ano seguinte, sem custo adicional"
+    },
+    {
+      "id": 6,
+      "pergunta": "Tem TCC?",
+      "resposta": "Depende do curso (principalmente bacharelados e licenciaturas). Último ano tem disciplinas específicas e professor orientador."
+    },
+    {
+      "id": 7,
+      "pergunta": "Precisa de nota do ENEM?",
+      "resposta": "Não é obrigatória. Serve apenas para dispensar do vestibular. Sem ENEM, faz o processo seletivo (bem tranquilo)."
+    },
+    {
+      "id": 8,
+      "pergunta": "Como funciona o estágio?",
+      "obrigatorio": {
+        "descricao": "Faz parte da grade (alguns cursos)",
+        "documentacao": "Unicesumar fornece pelo AVA",
+        "suporte": "Polo auxilia"
+      },
+      "nao_obrigatorio": {
+        "descricao": "Opcional, geralmente remunerado",
+        "quando": "Quando o aluno quiser"
+      },
+      "onde_fazer": [
+        "Convênios com empresas parceiras",
+        "Campo próprio (trabalho atual)",
+        "Polo valida e emite documentação"
+      ]
+    },
+    {
+      "id": 9,
+      "pergunta": "Posso transferir de outra faculdade/polo?",
+      "resposta": "Sim! Recebemos transferências de outros polos Unicesumar ou outras universidades.",
+      "acao": "Encaminhar para atendimento humano para análise de aproveitamento"
+    },
+    {
+      "id": 10,
+      "pergunta": "Tem desconto para ex-aluno ou quem indica?",
+      "ex_alunos": "+10% adicional sobre o valor já com desconto",
+      "eu_indico": {
+        "ead_pos_tecnicos": "25% de desconto",
+        "semipresenciais": "50% de desconto",
+        "aplicacao": "Na mensalidade do mês seguinte à matrícula do indicado"
+      }
+    }
+  ]
+}

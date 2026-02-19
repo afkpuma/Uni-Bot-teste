@@ -1,0 +1,2100 @@
+{
+  "metadata": {
+    "tipo": "pos_graduacao",
+    "total_cursos": 208,
+    "versao": "1.0",
+    "data_geracao": "2025-12-19"
+  },
+  "observacoes": {
+    "valores": "Parcelamento em 18x (diferente de graduação que é mensalidade contínua)",
+    "duracao": "6 a 12 meses",
+    "tipo_valor": "Valor total parcelado em 18 vezes",
+    "desconto_pontualidade": "10% se pagar até dia 10 (aplica em cada parcela)",
+    "avaliacoes": "100% online",
+    "inicio": "IMEDIATO após compensação do pagamento (não aguarda módulo)",
+    "tipo_curso": "Especialização lato sensu reconhecida pelo MEC"
+  },
+  "cursos": [
+    {
+      "id": 1,
+      "nome": "Acupuntura e Técnicas Complementares",
+      "area": "Saúde",
+      "subarea": "Enfermagem e Cuidados Intensivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 286.99,
+      "valor_total": 5165.82
+    },
+    {
+      "id": 2,
+      "nome": "Análises Clínicas",
+      "area": "Saúde",
+      "subarea": "Enfermagem e Cuidados Intensivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 339.99,
+      "valor_total": 6119.82
+    },
+    {
+      "id": 3,
+      "nome": "Auditoria e Governança Clínica em Saúde",
+      "area": "Saúde",
+      "subarea": "Enfermagem e Cuidados Intensivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 4,
+      "nome": "Auditoria em Saúde",
+      "area": "Saúde",
+      "subarea": "Enfermagem e Cuidados Intensivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 339.99,
+      "valor_total": 6119.82
+    },
+    {
+      "id": 5,
+      "nome": "Cuidados Paliativos e Tanatologia",
+      "area": "Saúde",
+      "subarea": "Enfermagem e Cuidados Intensivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 339.99,
+      "valor_total": 6119.82
+    },
+    {
+      "id": 6,
+      "nome": "Enfermagem em Cardiologia e Hemodinâmica",
+      "area": "Saúde",
+      "subarea": "Enfermagem e Cuidados Intensivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 356.99,
+      "valor_total": 6425.82
+    },
+    {
+      "id": 7,
+      "nome": "Enfermagem em Cuidados Intensivos Neonatais e Pediátricos",
+      "area": "Saúde",
+      "subarea": "Enfermagem e Cuidados Intensivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 339.99,
+      "valor_total": 6119.82
+    },
+    {
+      "id": 8,
+      "nome": "Enfermagem em Estomaterapia",
+      "area": "Saúde",
+      "subarea": "Enfermagem e Cuidados Intensivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 339.99,
+      "valor_total": 6119.82
+    },
+    {
+      "id": 9,
+      "nome": "Enfermagem em Nefrologia",
+      "area": "Saúde",
+      "subarea": "Enfermagem e Cuidados Intensivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 339.99,
+      "valor_total": 6119.82
+    },
+    {
+      "id": 10,
+      "nome": "Enfermagem em Pediatria e Neonatal",
+      "area": "Saúde",
+      "subarea": "Enfermagem e Cuidados Intensivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 339.99,
+      "valor_total": 6119.82
+    },
+    {
+      "id": 11,
+      "nome": "Enfermagem em Unidade de Terapia Intensiva",
+      "area": "Saúde",
+      "subarea": "Enfermagem e Cuidados Intensivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 339.99,
+      "valor_total": 6119.82
+    },
+    {
+      "id": 12,
+      "nome": "Enfermagem em Urgência e Emergência",
+      "area": "Saúde",
+      "subarea": "Enfermagem e Cuidados Intensivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 339.99,
+      "valor_total": 6119.82
+    },
+    {
+      "id": 13,
+      "nome": "Enfermagem do Trabalho",
+      "area": "Saúde",
+      "subarea": "Enfermagem e Cuidados Intensivos",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 286.99,
+      "valor_total": 5165.82
+    },
+    {
+      "id": 14,
+      "nome": "Fisioterapia Cardiorrespiratória",
+      "area": "Saúde",
+      "subarea": "Fisioterapia",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 286.99,
+      "valor_total": 5165.82
+    },
+    {
+      "id": 15,
+      "nome": "Fisioterapia em Gerontologia e Reabilitação do Idoso",
+      "area": "Saúde",
+      "subarea": "Fisioterapia",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 286.99,
+      "valor_total": 5165.82
+    },
+    {
+      "id": 16,
+      "nome": "Fisioterapia em Reabilitação Neurológica",
+      "area": "Saúde",
+      "subarea": "Fisioterapia",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 286.99,
+      "valor_total": 5165.82
+    },
+    {
+      "id": 17,
+      "nome": "Fisioterapia em Terapia Intensiva",
+      "area": "Saúde",
+      "subarea": "Fisioterapia",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 286.99,
+      "valor_total": 5165.82
+    },
+    {
+      "id": 18,
+      "nome": "Fisioterapia Pélvica Funcional",
+      "area": "Saúde",
+      "subarea": "Fisioterapia",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 286.99,
+      "valor_total": 5165.82
+    },
+    {
+      "id": 19,
+      "nome": "Fisioterapia Traumato-Ortopédica Funcional",
+      "area": "Saúde",
+      "subarea": "Fisioterapia",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 286.99,
+      "valor_total": 5165.82
+    },
+    {
+      "id": 20,
+      "nome": "Fisiologia do Exercício",
+      "area": "Saúde",
+      "subarea": "Fisioterapia",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 286.99,
+      "valor_total": 5165.82
+    },
+    {
+      "id": 21,
+      "nome": "Fonoaudiologia com Ênfase em Audiologia e Reabilitação Auditiva",
+      "area": "Saúde",
+      "subarea": "Fonoaudiologia",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 258.99,
+      "valor_total": 4661.82
+    },
+    {
+      "id": 22,
+      "nome": "Fonoaudiologia Hospitalar e Reabilitação",
+      "area": "Saúde",
+      "subarea": "Fonoaudiologia",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 356.99,
+      "valor_total": 6425.82
+    },
+    {
+      "id": 23,
+      "nome": "Nutrição Clínica",
+      "area": "Saúde",
+      "subarea": "Nutrição",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 339.99,
+      "valor_total": 6119.82
+    },
+    {
+      "id": 24,
+      "nome": "Nutrição Estética Funcional e Marketing Estratégico",
+      "area": "Saúde",
+      "subarea": "Nutrição",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 411.99,
+      "valor_total": 7415.82
+    },
+    {
+      "id": 25,
+      "nome": "Nutrição Materno Infantil",
+      "area": "Saúde",
+      "subarea": "Nutrição",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 26,
+      "nome": "Nutrição e Alta Performance Esportiva",
+      "area": "Saúde",
+      "subarea": "Nutrição",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 411.99,
+      "valor_total": 7415.82
+    },
+    {
+      "id": 27,
+      "nome": "Nutrição Funcional",
+      "area": "Saúde",
+      "subarea": "Nutrição",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 411.99,
+      "valor_total": 7415.82
+    },
+    {
+      "id": 28,
+      "nome": "Gastronomia Funcional e Natural",
+      "area": "Saúde",
+      "subarea": "Nutrição",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 29,
+      "nome": "Higiene e Inspeção de Alimentos",
+      "area": "Saúde",
+      "subarea": "Nutrição",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 286.99,
+      "valor_total": 5165.82
+    },
+    {
+      "id": 30,
+      "nome": "Farmácia Hospitalar e Clínica",
+      "area": "Saúde",
+      "subarea": "Farmácia",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 273.99,
+      "valor_total": 4931.82
+    },
+    {
+      "id": 31,
+      "nome": "Farmacologia Aplicada à Clínica e Prescrição Farmacêutica",
+      "area": "Saúde",
+      "subarea": "Farmácia",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 32,
+      "nome": "Hematologia Clínica",
+      "area": "Saúde",
+      "subarea": "Análises Clínicas e Biomedicina",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 339.99,
+      "valor_total": 6119.82
+    },
+    {
+      "id": 33,
+      "nome": "Biotecnologia Ambiental",
+      "area": "Saúde",
+      "subarea": "Análises Clínicas e Biomedicina",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 361.99,
+      "valor_total": 6515.82
+    },
+    {
+      "id": 34,
+      "nome": "Podologia Clínica",
+      "area": "Saúde",
+      "subarea": "Podologia e Estética",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 258.99,
+      "valor_total": 4661.82
+    },
+    {
+      "id": 35,
+      "nome": "Estética e Cosmética: Mercado e Procedimentos",
+      "area": "Saúde",
+      "subarea": "Podologia e Estética",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 392.99,
+      "valor_total": 7073.82
+    },
+    {
+      "id": 36,
+      "nome": "Personal Training",
+      "area": "Saúde",
+      "subarea": "Podologia e Estética",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 392.99,
+      "valor_total": 7073.82,
+      "observacao": "Requer graduação em Educação Física Bacharelado"
+    },
+    {
+      "id": 37,
+      "nome": "Gestão da Qualidade e Segurança do Paciente",
+      "area": "Saúde",
+      "subarea": "Gestão em Saúde",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 286.99,
+      "valor_total": 5165.82
+    },
+    {
+      "id": 38,
+      "nome": "Gestão da Qualidade em Saúde",
+      "area": "Saúde",
+      "subarea": "Gestão em Saúde",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 39,
+      "nome": "Gestão Estratégica de Organizações da Saúde",
+      "area": "Saúde",
+      "subarea": "Gestão em Saúde",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 392.99,
+      "valor_total": 7073.82
+    },
+    {
+      "id": 40,
+      "nome": "Gestão Hospitalar",
+      "area": "Saúde",
+      "subarea": "Gestão em Saúde",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 273.99,
+      "valor_total": 4931.82
+    },
+    {
+      "id": 41,
+      "nome": "Higiene Ocupacional",
+      "area": "Saúde",
+      "subarea": "Gestão em Saúde",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 356.99,
+      "valor_total": 6425.82
+    },
+    {
+      "id": 42,
+      "nome": "Engenharia de Segurança do Trabalho",
+      "area": "Saúde",
+      "subarea": "Gestão em Saúde",
+      "duracao": "12 meses",
+      "parcelas": 18,
+      "valor_parcela": 405.99,
+      "valor_total": 7307.82
+    },
+    {
+      "id": 43,
+      "nome": "Saúde Coletiva",
+      "area": "Saúde",
+      "subarea": "Saúde Pública e Coletiva",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 286.99,
+      "valor_total": 5165.82
+    },
+    {
+      "id": 44,
+      "nome": "Saúde Pública",
+      "area": "Saúde",
+      "subarea": "Saúde Pública e Coletiva",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 286.99,
+      "valor_total": 5165.82
+    },
+    {
+      "id": 45,
+      "nome": "Vigilância Sanitária",
+      "area": "Saúde",
+      "subarea": "Saúde Pública e Coletiva",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 46,
+      "nome": "Saúde do Idoso e Gerontologia",
+      "area": "Saúde",
+      "subarea": "Saúde Pública e Coletiva",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 47,
+      "nome": "Saúde Multidisciplinar em Oncologia",
+      "area": "Saúde",
+      "subarea": "Saúde Pública e Coletiva",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 286.99,
+      "valor_total": 5165.82
+    },
+    {
+      "id": 48,
+      "nome": "Capacitação de Profissionais da Saúde",
+      "area": "Saúde",
+      "subarea": "Saúde Pública e Coletiva",
+      "duracao": "12 meses",
+      "parcelas": 18,
+      "valor_parcela": 242.99,
+      "valor_total": 4373.82
+    },
+    {
+      "id": 49,
+      "nome": "Saúde Mental e Atenção Psicossocial",
+      "area": "Saúde",
+      "subarea": "Saúde Mental e Psicologia",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 286.99,
+      "valor_total": 5165.82
+    },
+    {
+      "id": 50,
+      "nome": "Saúde Mental na Infância e Adolescência",
+      "area": "Saúde",
+      "subarea": "Saúde Mental e Psicologia",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 286.99,
+      "valor_total": 5165.82
+    },
+    {
+      "id": 51,
+      "nome": "Psicanálise",
+      "area": "Saúde",
+      "subarea": "Saúde Mental e Psicologia",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 286.99,
+      "valor_total": 5165.82
+    },
+    {
+      "id": 52,
+      "nome": "Psicologia Clínica",
+      "area": "Saúde",
+      "subarea": "Saúde Mental e Psicologia",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 373.99,
+      "valor_total": 6731.82
+    },
+    {
+      "id": 53,
+      "nome": "Terapia Cognitivo Comportamental",
+      "area": "Saúde",
+      "subarea": "Saúde Mental e Psicologia",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 373.99,
+      "valor_total": 6731.82
+    },
+    {
+      "id": 54,
+      "nome": "Neuropsicologia",
+      "area": "Saúde",
+      "subarea": "Saúde Mental e Psicologia",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 373.99,
+      "valor_total": 6731.82
+    },
+    {
+      "id": 55,
+      "nome": "Neurociências Aplicadas à Saúde e Bem-Estar",
+      "area": "Saúde",
+      "subarea": "Neurociências e Tecnologia em Saúde",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 286.99,
+      "valor_total": 5165.82
+    },
+    {
+      "id": 56,
+      "nome": "Inteligência Artificial Aplicada à Saúde",
+      "area": "Saúde",
+      "subarea": "Neurociências e Tecnologia em Saúde",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 57,
+      "nome": "Telemedicina e Saúde Digital",
+      "area": "Saúde",
+      "subarea": "Neurociências e Tecnologia em Saúde",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 286.99,
+      "valor_total": 5165.82
+    },
+    {
+      "id": 58,
+      "nome": "Ética e Regulação na Saúde Digital",
+      "area": "Saúde",
+      "subarea": "Neurociências e Tecnologia em Saúde",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 286.99,
+      "valor_total": 5165.82
+    },
+    {
+      "id": 59,
+      "nome": "Direito Médico e Compliance",
+      "area": "Saúde",
+      "subarea": "Direito da Saúde",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 339.99,
+      "valor_total": 6119.82
+    },
+    {
+      "id": 60,
+      "nome": "Práticas Integrativas e Complementares (PICs)",
+      "area": "Saúde",
+      "subarea": "Práticas Integrativas",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 258.99,
+      "valor_total": 4661.82
+    },
+    {
+      "id": 61,
+      "nome": "Atendimento Educacional Especializado Educação Especial e Inclusiva",
+      "area": "Educação",
+      "subarea": "Educação Especial e Inclusiva",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 351.99,
+      "valor_total": 6335.82
+    },
+    {
+      "id": 62,
+      "nome": "Educação Especial Inclusiva",
+      "area": "Educação",
+      "subarea": "Educação Especial e Inclusiva",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 63,
+      "nome": "Educação Especial: Transtorno do Espectro Autista",
+      "area": "Educação",
+      "subarea": "Educação Especial e Inclusiva",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 64,
+      "nome": "Educação Especial e Inclusiva: Tecnologia Assistiva e Comunicação Alternativa",
+      "area": "Educação",
+      "subarea": "Educação Especial e Inclusiva",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 65,
+      "nome": "Inclusão e Acessibilidade na Era Digital",
+      "area": "Educação",
+      "subarea": "Educação Especial e Inclusiva",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 242.99,
+      "valor_total": 4373.82
+    },
+    {
+      "id": 66,
+      "nome": "Educação de Jovens e Adultos e Ludopedagogia",
+      "area": "Educação",
+      "subarea": "Educação Especial e Inclusiva",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 67,
+      "nome": "Ambiente Escolar e Familiar",
+      "area": "Educação",
+      "subarea": "Educação Especial e Inclusiva",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 254.99,
+      "valor_total": 4589.82
+    },
+    {
+      "id": 68,
+      "nome": "Educação Infantil e Anos Iniciais do Ensino Fundamental",
+      "area": "Educação",
+      "subarea": "Educação Infantil e Anos Iniciais",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 351.99,
+      "valor_total": 6335.82
+    },
+    {
+      "id": 69,
+      "nome": "Alfabetização e Letramento",
+      "area": "Educação",
+      "subarea": "Educação Infantil e Anos Iniciais",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 242.99,
+      "valor_total": 4373.82
+    },
+    {
+      "id": 70,
+      "nome": "Princípios Básicos Para a Formação da Criança",
+      "area": "Educação",
+      "subarea": "Educação Infantil e Anos Iniciais",
+      "duracao": "6 meses",
+      "parcelas": 18,
+      "valor_parcela": 208.99,
+      "valor_total": 3761.82
+    },
+    {
+      "id": 71,
+      "nome": "Gestão Educacional",
+      "area": "Educação",
+      "subarea": "Gestão Escolar",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 333.99,
+      "valor_total": 6011.82
+    },
+    {
+      "id": 72,
+      "nome": "Gestão Escolar",
+      "area": "Educação",
+      "subarea": "Gestão Escolar",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 73,
+      "nome": "Administração escolar, supervisão e orientação",
+      "area": "Educação",
+      "subarea": "Gestão Escolar",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 74,
+      "nome": "Coordenação Pedagógica",
+      "area": "Educação",
+      "subarea": "Gestão Escolar",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 242.99,
+      "valor_total": 4373.82
+    },
+    {
+      "id": 75,
+      "nome": "Auxiliar de Gestão Escolar",
+      "area": "Educação",
+      "subarea": "Gestão Escolar",
+      "duracao": "9 meses",
+      "parcelas": 18,
+      "valor_parcela": 205.99,
+      "valor_total": 3707.82
+    },
+    {
+      "id": 76,
+      "nome": "Multifunções do Gestor Escolar",
+      "area": "Educação",
+      "subarea": "Gestão Escolar",
+      "duracao": "6 meses",
+      "parcelas": 18,
+      "valor_parcela": 205.99,
+      "valor_total": 3707.82
+    },
+    {
+      "id": 77,
+      "nome": "Orientação Educacional",
+      "area": "Educação",
+      "subarea": "Orientação e Psicopedagogia",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 78,
+      "nome": "Psicopedagogia",
+      "area": "Educação",
+      "subarea": "Orientação e Psicopedagogia",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 79,
+      "nome": "Psicopedagogia Clínica e Institucional",
+      "area": "Educação",
+      "subarea": "Orientação e Psicopedagogia",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 80,
+      "nome": "Neuropsicopedagogia",
+      "area": "Educação",
+      "subarea": "Orientação e Psicopedagogia",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 81,
+      "nome": "Psicologia Educacional",
+      "area": "Educação",
+      "subarea": "Orientação e Psicopedagogia",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 82,
+      "nome": "Neuroaprendizagem",
+      "area": "Educação",
+      "subarea": "Neurociências e Aprendizagem",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 351.99,
+      "valor_total": 6335.82
+    },
+    {
+      "id": 83,
+      "nome": "Neurociências Aplicada à Educação e Aprendizagem",
+      "area": "Educação",
+      "subarea": "Neurociências e Aprendizagem",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 351.99,
+      "valor_total": 6335.82
+    },
+    {
+      "id": 84,
+      "nome": "Neuroeducação",
+      "area": "Educação",
+      "subarea": "Neurociências e Aprendizagem",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 85,
+      "nome": "Neuroeducação, Inteligência Artificial e Inovação Digital na Aprendizagem",
+      "area": "Educação",
+      "subarea": "Neurociências e Aprendizagem",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 86,
+      "nome": "Inteligência Artificial na Educação",
+      "area": "Educação",
+      "subarea": "Neurociências e Aprendizagem",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 87,
+      "nome": "Didática Inovadora na Educação Básica",
+      "area": "Educação",
+      "subarea": "Metodologias e Práticas Pedagógicas",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 242.99,
+      "valor_total": 4373.82
+    },
+    {
+      "id": 88,
+      "nome": "Práticas Inovadoras em Educação",
+      "area": "Educação",
+      "subarea": "Metodologias e Práticas Pedagógicas",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 254.99,
+      "valor_total": 4589.82
+    },
+    {
+      "id": 89,
+      "nome": "Auxiliar de Práticas Pedagógicas Inovadoras",
+      "area": "Educação",
+      "subarea": "Metodologias e Práticas Pedagógicas",
+      "duracao": "9 meses",
+      "parcelas": 18,
+      "valor_parcela": 215.99,
+      "valor_total": 3887.82
+    },
+    {
+      "id": 90,
+      "nome": "Docência Aplicada a Questões Socioeducativas",
+      "area": "Educação",
+      "subarea": "Metodologias e Práticas Pedagógicas",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 242.99,
+      "valor_total": 4373.82
+    },
+    {
+      "id": 91,
+      "nome": "Inovações no Ensino de Matemática",
+      "area": "Educação",
+      "subarea": "Metodologias e Práticas Pedagógicas",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 242.99,
+      "valor_total": 4373.82
+    },
+    {
+      "id": 92,
+      "nome": "Educação Financeira e o Ensino da Matemática",
+      "area": "Educação",
+      "subarea": "Metodologias e Práticas Pedagógicas",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 242.99,
+      "valor_total": 4373.82
+    },
+    {
+      "id": 93,
+      "nome": "Ludicidade no Currículo Escolar",
+      "area": "Educação",
+      "subarea": "Metodologias e Práticas Pedagógicas",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 94,
+      "nome": "Gamificação na Educação",
+      "area": "Educação",
+      "subarea": "Metodologias e Práticas Pedagógicas",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 95,
+      "nome": "Teatro, Expressividade e Dinamismo no Ambiente Escolar",
+      "area": "Educação",
+      "subarea": "Metodologias e Práticas Pedagógicas",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 242.99,
+      "valor_total": 4373.82
+    },
+    {
+      "id": 96,
+      "nome": "Arte, Cultura e Educação",
+      "area": "Educação",
+      "subarea": "Metodologias e Práticas Pedagógicas",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 254.99,
+      "valor_total": 4589.82
+    },
+    {
+      "id": 97,
+      "nome": "Ensino de História e Geografia e suas Linguagens",
+      "area": "Educação",
+      "subarea": "Ensino de Disciplinas Específicas",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 98,
+      "nome": "Língua Portuguesa e Literatura no Contexto Educacional",
+      "area": "Educação",
+      "subarea": "Ensino de Disciplinas Específicas",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 99,
+      "nome": "Leitura e Produção Textual",
+      "area": "Educação",
+      "subarea": "Ensino de Disciplinas Específicas",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 100,
+      "nome": "Educação Física Escolar",
+      "area": "Educação",
+      "subarea": "Educação Física e Esporte",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 242.99,
+      "valor_total": 4373.82
+    },
+    {
+      "id": 101,
+      "nome": "Gestão Estratégica de Esportes",
+      "area": "Educação",
+      "subarea": "Educação Física e Esporte",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 273.99,
+      "valor_total": 4931.82
+    },
+    {
+      "id": 102,
+      "nome": "EAD e as Novas Tecnologias Educacionais",
+      "area": "Educação",
+      "subarea": "EAD e Tecnologias Educacionais",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 103,
+      "nome": "Metodologias e Processos em EAD",
+      "area": "Educação",
+      "subarea": "EAD e Tecnologias Educacionais",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 242.99,
+      "valor_total": 4373.82
+    },
+    {
+      "id": 104,
+      "nome": "Práticas Fundamentais de Tecnologia em EAD",
+      "area": "Educação",
+      "subarea": "EAD e Tecnologias Educacionais",
+      "duracao": "6 meses",
+      "parcelas": 18,
+      "valor_parcela": 208.99,
+      "valor_total": 3761.82
+    },
+    {
+      "id": 105,
+      "nome": "Tecnologia e Cultura Digital Aplicadas à Educação",
+      "area": "Educação",
+      "subarea": "EAD e Tecnologias Educacionais",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 282.99,
+      "valor_total": 5093.82
+    },
+    {
+      "id": 106,
+      "nome": "Docência no Ensino Superior",
+      "area": "Educação",
+      "subarea": "Docência no Ensino Superior",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 327.99,
+      "valor_total": 5903.82
+    },
+    {
+      "id": 107,
+      "nome": "Educação do Campo",
+      "area": "Educação",
+      "subarea": "Educação em Contextos Específicos",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 242.99,
+      "valor_total": 4373.82
+    },
+    {
+      "id": 108,
+      "nome": "Educação Social e Cidadania",
+      "area": "Educação",
+      "subarea": "Educação em Contextos Específicos",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 244.99,
+      "valor_total": 4409.82
+    },
+    {
+      "id": 109,
+      "nome": "Educação Ambiental e Sustentabilidade",
+      "area": "Educação",
+      "subarea": "Educação em Contextos Específicos",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 253.99,
+      "valor_total": 4571.82
+    },
+    {
+      "id": 110,
+      "nome": "Políticas e Educação Democrática",
+      "area": "Educação",
+      "subarea": "Educação em Contextos Específicos",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 254.99,
+      "valor_total": 4589.82
+    },
+    {
+      "id": 111,
+      "nome": "História, Cultura e Literatura Afro-Brasileira e Indígena",
+      "area": "Educação",
+      "subarea": "Educação em Contextos Específicos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 351.99,
+      "valor_total": 6335.82
+    },
+    {
+      "id": 112,
+      "nome": "MBA em Pedagogia não Formal: Novos Espaços para a Atuação do Pedagogo",
+      "area": "Educação",
+      "subarea": "Pedagogia em Diferentes Espaços",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 349.99,
+      "valor_total": 6299.82
+    },
+    {
+      "id": 113,
+      "nome": "Pedagogia e Novo Cenário da Home Education",
+      "area": "Educação",
+      "subarea": "Pedagogia em Diferentes Espaços",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 242.99,
+      "valor_total": 4373.82
+    },
+    {
+      "id": 114,
+      "nome": "Pedagogia Empresarial e Desenvolvimento do Conhecimento",
+      "area": "Educação",
+      "subarea": "Pedagogia em Diferentes Espaços",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 242.99,
+      "valor_total": 4373.82
+    },
+    {
+      "id": 115,
+      "nome": "Desenvolvimento Profissional",
+      "area": "Educação",
+      "subarea": "Desenvolvimento Profissional Docente",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 116,
+      "nome": "Gestão da Aprendizagem e Educação Cognitiva",
+      "area": "Educação",
+      "subarea": "Desenvolvimento Profissional Docente",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 254.99,
+      "valor_total": 4589.82
+    },
+    {
+      "id": 117,
+      "nome": "MBA em Agronegócio",
+      "area": "Gestão e Negócios",
+      "subarea": "MBA Executivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 387.99,
+      "valor_total": 6983.82
+    },
+    {
+      "id": 118,
+      "nome": "MBA em Coaching aplicado à Gestão de Pessoas",
+      "area": "Gestão e Negócios",
+      "subarea": "MBA Executivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 385.99,
+      "valor_total": 6947.82
+    },
+    {
+      "id": 119,
+      "nome": "MBA em Coaching com Ênfase em Mentoring para Gestão de Pessoas",
+      "area": "Gestão e Negócios",
+      "subarea": "MBA Executivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 387.99,
+      "valor_total": 6983.82
+    },
+    {
+      "id": 120,
+      "nome": "MBA em Gestão Comercial e Inteligência de Mercado",
+      "area": "Gestão e Negócios",
+      "subarea": "MBA Executivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 337.99,
+      "valor_total": 6083.82
+    },
+    {
+      "id": 121,
+      "nome": "MBA em Gestão da Comunicação Organizacional",
+      "area": "Gestão e Negócios",
+      "subarea": "MBA Executivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 387.99,
+      "valor_total": 6983.82
+    },
+    {
+      "id": 122,
+      "nome": "MBA em Gestão de Negócios e Inovação",
+      "area": "Gestão e Negócios",
+      "subarea": "MBA Executivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 387.99,
+      "valor_total": 6983.82
+    },
+    {
+      "id": 123,
+      "nome": "MBA em Gestão de Projetos",
+      "area": "Gestão e Negócios",
+      "subarea": "MBA Executivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 387.99,
+      "valor_total": 6983.82
+    },
+    {
+      "id": 124,
+      "nome": "MBA em Gestão de Projetos e Negócios Sociais",
+      "area": "Gestão e Negócios",
+      "subarea": "MBA Executivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 387.99,
+      "valor_total": 6983.82
+    },
+    {
+      "id": 125,
+      "nome": "MBA em Gestão do Conhecimento nas Organizações",
+      "area": "Gestão e Negócios",
+      "subarea": "MBA Executivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 385.99,
+      "valor_total": 6947.82
+    },
+    {
+      "id": 126,
+      "nome": "MBA em Inovação e Criatividade no Ambiente Empresarial",
+      "area": "Gestão e Negócios",
+      "subarea": "MBA Executivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 397.99,
+      "valor_total": 7163.82
+    },
+    {
+      "id": 127,
+      "nome": "MBA em Marketing, Criatividade e Inovação",
+      "area": "Gestão e Negócios",
+      "subarea": "MBA Executivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 397.99,
+      "valor_total": 7163.82
+    },
+    {
+      "id": 128,
+      "nome": "MBA em Planejamento e Estratégia Organizacional",
+      "area": "Gestão e Negócios",
+      "subarea": "MBA Executivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 387.99,
+      "valor_total": 6983.82
+    },
+    {
+      "id": 129,
+      "nome": "MBA em Recursos Humanos",
+      "area": "Gestão e Negócios",
+      "subarea": "MBA Executivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 339.99,
+      "valor_total": 6119.82
+    },
+    {
+      "id": 130,
+      "nome": "MBA em Supply Chain Management",
+      "area": "Gestão e Negócios",
+      "subarea": "MBA Executivos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 387.99,
+      "valor_total": 6983.82
+    },
+    {
+      "id": 131,
+      "nome": "MBA em Educação Corporativa e Gestão do Conhecimento",
+      "area": "Gestão e Negócios",
+      "subarea": "MBA Especializados",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 132,
+      "nome": "MBA em Educação Executiva e Análise Organizacional",
+      "area": "Gestão e Negócios",
+      "subarea": "MBA Especializados",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 351.99,
+      "valor_total": 6335.82
+    },
+    {
+      "id": 133,
+      "nome": "MBA Executivo em Economia Criativa, Cultura e Inovação",
+      "area": "Gestão e Negócios",
+      "subarea": "MBA Especializados",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 400.99,
+      "valor_total": 7217.82
+    },
+    {
+      "id": 134,
+      "nome": "Gestão Estratégica de Pessoas",
+      "area": "Gestão e Negócios",
+      "subarea": "Gestão de Pessoas e RH",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 380.99,
+      "valor_total": 6857.82
+    },
+    {
+      "id": 135,
+      "nome": "Administração de Pessoas",
+      "area": "Gestão e Negócios",
+      "subarea": "Gestão de Pessoas e RH",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 332.99,
+      "valor_total": 5993.82
+    },
+    {
+      "id": 136,
+      "nome": "Gestão de Pessoas na Administração Pública",
+      "area": "Gestão e Negócios",
+      "subarea": "Gestão de Pessoas e RH",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 332.99,
+      "valor_total": 5993.82
+    },
+    {
+      "id": 137,
+      "nome": "Gestão de Pessoas: Treinamento e Desenvolvimento",
+      "area": "Gestão e Negócios",
+      "subarea": "Gestão de Pessoas e RH",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 138,
+      "nome": "Gestão do Comportamento e da Interatividade em Organizações",
+      "area": "Gestão e Negócios",
+      "subarea": "Gestão de Pessoas e RH",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 332.99,
+      "valor_total": 5993.82
+    },
+    {
+      "id": 139,
+      "nome": "Psicologia Organizacional",
+      "area": "Gestão e Negócios",
+      "subarea": "Gestão de Pessoas e RH",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 373.99,
+      "valor_total": 6731.82
+    },
+    {
+      "id": 140,
+      "nome": "Psicologia Positiva e Coaching",
+      "area": "Gestão e Negócios",
+      "subarea": "Gestão de Pessoas e RH",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 373.99,
+      "valor_total": 6731.82
+    },
+    {
+      "id": 141,
+      "nome": "Clima e Governança Organizacional",
+      "area": "Gestão e Negócios",
+      "subarea": "Gestão de Pessoas e RH",
+      "duracao": "12 meses",
+      "parcelas": 18,
+      "valor_parcela": 241.99,
+      "valor_total": 4355.82
+    },
+    {
+      "id": 142,
+      "nome": "Gestão do Conhecimento na Educação",
+      "area": "Gestão e Negócios",
+      "subarea": "Gestão de Pessoas e RH",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 254.99,
+      "valor_total": 4589.82
+    },
+    {
+      "id": 143,
+      "nome": "Liderança e Gestão de Equipes",
+      "area": "Gestão e Negócios",
+      "subarea": "Liderança e Coaching",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 144,
+      "nome": "Liderança Inovadora",
+      "area": "Gestão e Negócios",
+      "subarea": "Liderança e Coaching",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 380.99,
+      "valor_total": 6857.82
+    },
+    {
+      "id": 145,
+      "nome": "Coaching e Desenvolvimento de Pessoas",
+      "area": "Gestão e Negócios",
+      "subarea": "Liderança e Coaching",
+      "duracao": "6 meses",
+      "parcelas": 18,
+      "valor_parcela": 248.99,
+      "valor_total": 4481.82
+    },
+    {
+      "id": 146,
+      "nome": "Gestão Estratégica de Negócios",
+      "area": "Gestão e Negócios",
+      "subarea": "Gestão Estratégica e Negócios",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 328.99,
+      "valor_total": 5921.82
+    },
+    {
+      "id": 147,
+      "nome": "Gestão e Planejamento",
+      "area": "Gestão e Negócios",
+      "subarea": "Gestão Estratégica e Negócios",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 148,
+      "nome": "Governança Corporativa e Gestão Estratégica",
+      "area": "Gestão e Negócios",
+      "subarea": "Gestão Estratégica e Negócios",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 149,
+      "nome": "Governança Corporativa e Responsabilidade Social",
+      "area": "Gestão e Negócios",
+      "subarea": "Gestão Estratégica e Negócios",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 244.99,
+      "valor_total": 4409.82
+    },
+    {
+      "id": 150,
+      "nome": "Inovação e Empreendedorismo Social",
+      "area": "Gestão e Negócios",
+      "subarea": "Gestão Estratégica e Negócios",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 151,
+      "nome": "Inovação e Negócios Disruptivos",
+      "area": "Gestão e Negócios",
+      "subarea": "Gestão Estratégica e Negócios",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 258.99,
+      "valor_total": 4661.82
+    },
+    {
+      "id": 152,
+      "nome": "Gestão da Qualidade",
+      "area": "Gestão e Negócios",
+      "subarea": "Gestão de Qualidade e Produção",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 332.99,
+      "valor_total": 5993.82
+    },
+    {
+      "id": 153,
+      "nome": "Engenharia e Gestão da Produção",
+      "area": "Gestão e Negócios",
+      "subarea": "Gestão de Qualidade e Produção",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 380.99,
+      "valor_total": 6857.82
+    },
+    {
+      "id": 154,
+      "nome": "Gestão da Produção",
+      "area": "Gestão e Negócios",
+      "subarea": "Gestão de Qualidade e Produção",
+      "duracao": "12 meses",
+      "parcelas": 18,
+      "valor_parcela": 242.99,
+      "valor_total": 4373.82
+    },
+    {
+      "id": 155,
+      "nome": "Gestão de Projetos",
+      "area": "Gestão e Negócios",
+      "subarea": "Gestão de Projetos",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 380.99,
+      "valor_total": 6857.82
+    },
+    {
+      "id": 156,
+      "nome": "Prática de Metodologias Ágeis",
+      "area": "Gestão e Negócios",
+      "subarea": "Gestão de Projetos",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 368.99,
+      "valor_total": 6641.82
+    },
+    {
+      "id": 157,
+      "nome": "Negócios Ágeis",
+      "area": "Gestão e Negócios",
+      "subarea": "Empreendedorismo e Negócios",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 158,
+      "nome": "Negócios Digitais e Inovação",
+      "area": "Gestão e Negócios",
+      "subarea": "Empreendedorismo e Negócios",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 159,
+      "nome": "Gestão Estratégica do Varejo",
+      "area": "Gestão e Negócios",
+      "subarea": "Empreendedorismo e Negócios",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 160,
+      "nome": "Gestão Estratégica em Negócios Gastronômicos",
+      "area": "Gestão e Negócios",
+      "subarea": "Empreendedorismo e Negócios",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 332.99,
+      "valor_total": 5993.82
+    },
+    {
+      "id": 161,
+      "nome": "Administração Financeira",
+      "area": "Finanças e Contabilidade",
+      "subarea": "Finanças",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 380.99,
+      "valor_total": 6857.82
+    },
+    {
+      "id": 162,
+      "nome": "Auditoria e Finanças",
+      "area": "Finanças e Contabilidade",
+      "subarea": "Finanças",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 339.99,
+      "valor_total": 6119.82
+    },
+    {
+      "id": 163,
+      "nome": "Auditoria, Contabilidade e Perícia Contábil",
+      "area": "Finanças e Contabilidade",
+      "subarea": "Contabilidade",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 344.99,
+      "valor_total": 6209.82
+    },
+    {
+      "id": 164,
+      "nome": "Gestão de Custos e Planejamento Estratégico",
+      "area": "Finanças e Contabilidade",
+      "subarea": "Finanças",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 332.99,
+      "valor_total": 5993.82
+    },
+    {
+      "id": 165,
+      "nome": "Mercado Financeiro e Banking",
+      "area": "Finanças e Contabilidade",
+      "subarea": "Finanças",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 332.99,
+      "valor_total": 5993.82
+    },
+    {
+      "id": 166,
+      "nome": "Sistema Financeiro e Mercado de Capitais",
+      "area": "Finanças e Contabilidade",
+      "subarea": "Finanças",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 167,
+      "nome": "Gestão de Cooperativas de Crédito",
+      "area": "Finanças e Contabilidade",
+      "subarea": "Finanças",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 168,
+      "nome": "Marketing",
+      "area": "Marketing e Comunicação",
+      "subarea": "Marketing",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 332.99,
+      "valor_total": 5993.82
+    },
+    {
+      "id": 169,
+      "nome": "Marketing Digital",
+      "area": "Marketing e Comunicação",
+      "subarea": "Marketing",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 332.99,
+      "valor_total": 5993.82
+    },
+    {
+      "id": 170,
+      "nome": "Marketing e Mídias Digitais",
+      "area": "Marketing e Comunicação",
+      "subarea": "Marketing",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 332.99,
+      "valor_total": 5993.82
+    },
+    {
+      "id": 171,
+      "nome": "Neuromarketing",
+      "area": "Marketing e Comunicação",
+      "subarea": "Marketing",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 332.99,
+      "valor_total": 5993.82
+    },
+    {
+      "id": 172,
+      "nome": "Inteligência Artificial Aplicada a Growth Marketing",
+      "area": "Marketing e Comunicação",
+      "subarea": "Marketing",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 258.99,
+      "valor_total": 4661.82
+    },
+    {
+      "id": 173,
+      "nome": "Comunicação Empresarial e Marketing Digital",
+      "area": "Marketing e Comunicação",
+      "subarea": "Comunicação",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 174,
+      "nome": "Comunicação Corporativa Estratégica e Gestão de Crise",
+      "area": "Marketing e Comunicação",
+      "subarea": "Comunicação",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 339.99,
+      "valor_total": 6119.82
+    },
+    {
+      "id": 175,
+      "nome": "Construção de Narrativas e Copywriting",
+      "area": "Marketing e Comunicação",
+      "subarea": "Comunicação",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 242.99,
+      "valor_total": 4373.82
+    },
+    {
+      "id": 176,
+      "nome": "Inovação e Gestão de Conteúdo para a Economia Criativa",
+      "area": "Marketing e Comunicação",
+      "subarea": "Comunicação",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 282.99,
+      "valor_total": 5093.82
+    },
+    {
+      "id": 177,
+      "nome": "Design Thinking e Criatividade",
+      "area": "Marketing e Comunicação",
+      "subarea": "Comunicação",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 178,
+      "nome": "Moda e Negócio",
+      "area": "Marketing e Comunicação",
+      "subarea": "Comunicação",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 179,
+      "nome": "Big Data e Análise de Dados Organizacionais",
+      "area": "Tecnologia da Informação",
+      "subarea": "Data Science",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 282.99,
+      "valor_total": 5093.82
+    },
+    {
+      "id": 180,
+      "nome": "Ciência de Dados",
+      "area": "Tecnologia da Informação",
+      "subarea": "Data Science",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 282.99,
+      "valor_total": 5093.82
+    },
+    {
+      "id": 181,
+      "nome": "Inteligência Artificial e Machine Learning",
+      "area": "Tecnologia da Informação",
+      "subarea": "Data Science",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 258.99,
+      "valor_total": 4661.82
+    },
+    {
+      "id": 182,
+      "nome": "Desenvolvimento de Sistemas com JAVA",
+      "area": "Tecnologia da Informação",
+      "subarea": "Desenvolvimento",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 405.99,
+      "valor_total": 7307.82
+    },
+    {
+      "id": 183,
+      "nome": "Desenvolvimento de Sistemas com Python",
+      "area": "Tecnologia da Informação",
+      "subarea": "Desenvolvimento",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 405.99,
+      "valor_total": 7307.82
+    },
+    {
+      "id": 184,
+      "nome": "Design de UX",
+      "area": "Tecnologia da Informação",
+      "subarea": "Design",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 405.99,
+      "valor_total": 7307.82
+    },
+    {
+      "id": 185,
+      "nome": "Qualidade e Teste de Software",
+      "area": "Tecnologia da Informação",
+      "subarea": "Desenvolvimento",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 282.99,
+      "valor_total": 5093.82
+    },
+    {
+      "id": 186,
+      "nome": "Gestão de Tecnologia da Informação Corporativa",
+      "area": "Tecnologia da Informação",
+      "subarea": "Gestão de TI",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 282.99,
+      "valor_total": 5093.82
+    },
+    {
+      "id": 187,
+      "nome": "Gestão, Educação e Segurança no Trânsito",
+      "area": "Tecnologia da Informação",
+      "subarea": "Outros",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 188,
+      "nome": "Logística",
+      "area": "Tecnologia da Informação",
+      "subarea": "Logística",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 332.99,
+      "valor_total": 5993.82
+    },
+    {
+      "id": 189,
+      "nome": "Direito Civil",
+      "area": "Direito",
+      "subarea": "Direito",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 380.99,
+      "valor_total": 6857.82
+    },
+    {
+      "id": 190,
+      "nome": "Direito Imobiliário",
+      "area": "Direito",
+      "subarea": "Direito",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 380.99,
+      "valor_total": 6857.82
+    },
+    {
+      "id": 191,
+      "nome": "Direito Penal",
+      "area": "Direito",
+      "subarea": "Direito",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 380.99,
+      "valor_total": 6857.82
+    },
+    {
+      "id": 192,
+      "nome": "Direito Trabalhista",
+      "area": "Direito",
+      "subarea": "Direito",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 380.99,
+      "valor_total": 6857.82
+    },
+    {
+      "id": 193,
+      "nome": "Fashion Law Direito da Moda",
+      "area": "Direito",
+      "subarea": "Direito",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 385.99,
+      "valor_total": 6947.82
+    },
+    {
+      "id": 194,
+      "nome": "Administração Pública",
+      "area": "Administração Pública",
+      "subarea": "Administração Pública",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 380.99,
+      "valor_total": 6857.82
+    },
+    {
+      "id": 195,
+      "nome": "Ciência Política",
+      "area": "Administração Pública",
+      "subarea": "Administração Pública",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 326.99,
+      "valor_total": 5885.82
+    },
+    {
+      "id": 196,
+      "nome": "Direitos Humanos e Realidades Regionais",
+      "area": "Administração Pública",
+      "subarea": "Administração Pública",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 373.99,
+      "valor_total": 6731.82
+    },
+    {
+      "id": 197,
+      "nome": "Políticas Públicas e Municipalidade",
+      "area": "Administração Pública",
+      "subarea": "Administração Pública",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 326.99,
+      "valor_total": 5885.82
+    },
+    {
+      "id": 198,
+      "nome": "Gestão Ambiental",
+      "area": "Meio Ambiente",
+      "subarea": "Meio Ambiente",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 361.99,
+      "valor_total": 6515.82
+    },
+    {
+      "id": 199,
+      "nome": "Meio Ambiente e Sustentabilidade",
+      "area": "Meio Ambiente",
+      "subarea": "Meio Ambiente",
+      "duracao": "10 meses",
+      "parcelas": 18,
+      "valor_parcela": 386.99,
+      "valor_total": 6965.82
+    },
+    {
+      "id": 200,
+      "nome": "Perícia e Auditoria Ambiental",
+      "area": "Meio Ambiente",
+      "subarea": "Meio Ambiente",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 273.99,
+      "valor_total": 4931.82
+    },
+    {
+      "id": 201,
+      "nome": "Estudos Bíblicos no Antigo Testamento",
+      "area": "Teologia",
+      "subarea": "Teologia",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 326.99,
+      "valor_total": 5885.82
+    },
+    {
+      "id": 202,
+      "nome": "Estudos Bíblicos no Novo Testamento",
+      "area": "Teologia",
+      "subarea": "Teologia",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 326.99,
+      "valor_total": 5885.82
+    },
+    {
+      "id": 203,
+      "nome": "Gestão do Sistema Único da Assistência Social",
+      "area": "Assistência Social",
+      "subarea": "Assistência Social",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 326.99,
+      "valor_total": 5885.82
+    },
+    {
+      "id": 204,
+      "nome": "Docência em Serviço Social",
+      "area": "Assistência Social",
+      "subarea": "Assistência Social",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 332.99,
+      "valor_total": 5993.82
+    },
+    {
+      "id": 205,
+      "nome": "Projeto de Interiores",
+      "area": "Design e Projetos",
+      "subarea": "Design",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 206,
+      "nome": "Planejamento e Organização de Eventos",
+      "area": "Design e Projetos",
+      "subarea": "Eventos",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 249.99,
+      "valor_total": 4499.82
+    },
+    {
+      "id": 207,
+      "nome": "Empreendimentos e Negócios Imobiliários",
+      "area": "Negócios Imobiliários",
+      "subarea": "Imobiliário",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 332.99,
+      "valor_total": 5993.82
+    },
+    {
+      "id": 208,
+      "nome": "Sociologia da Educação e Cultura",
+      "area": "Sociologia",
+      "subarea": "Sociologia",
+      "duracao": "8 meses",
+      "parcelas": 18,
+      "valor_parcela": 254.99,
+      "valor_total": 4589.82
+    }
+  ]
+}

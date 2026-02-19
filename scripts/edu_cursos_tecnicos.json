@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "tipo": "tecnicos",
+    "total_cursos": 9,
+    "versao": "1.0",
+    "data_geracao": "2025-12-19"
+  },
+  "observacoes": {
+    "valores": "Valores de face (sem desconto). Aplicar política comercial para calcular valor final.",
+    "duracao": "Em meses",
+    "tipo_valor": "Mensalidade durante a duração do curso",
+    "provas": "Presenciais no polo",
+    "calendario": "Segue calendário de módulos igual graduação"
+  },
+  "cursos": [
+    {
+      "id": 1,
+      "nome": "Agronegócios",
+      "duracao": "18 meses",
+      "valor_face": 302.99
+    },
+    {
+      "id": 2,
+      "nome": "Computação Gráfica",
+      "duracao": "18 meses",
+      "valor_face": 297.99
+    },
+    {
+      "id": 3,
+      "nome": "Contabilidade",
+      "duracao": "12 meses",
+      "valor_face": 338.99
+    },
+    {
+      "id": 4,
+      "nome": "Cooperativismo",
+      "duracao": "12 meses",
+      "valor_face": 297.99
+    },
+    {
+      "id": 5,
+      "nome": "Desenvolvimento de Sistemas",
+      "duracao": "18 meses",
+      "valor_face": 297.99
+    },
+    {
+      "id": 6,
+      "nome": "Recursos Humanos",
+      "duracao": "12 meses",
+      "valor_face": 297.99
+    },
+    {
+      "id": 7,
+      "nome": "Secretaria Escolar",
+      "duracao": "12 meses",
+      "valor_face": 287.99
+    },
+    {
+      "id": 8,
+      "nome": "Segurança do Trabalho",
+      "duracao": "18 meses",
+      "valor_face": 459.99
+    },
+    {
+      "id": 9,
+      "nome": "Serviços Jurídicos",
+      "duracao": "12 meses",
+      "valor_face": 297.99
+    }
+  ]
+}

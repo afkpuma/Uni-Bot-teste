@@ -1,0 +1,497 @@
+{
+  "metadata": {
+    "tipo": "profissionalizantes",
+    "total_cursos": 80,
+    "versao": "1.0",
+    "data_geracao": "2025-12-19"
+  },
+  "observacoes": {
+    "valores": "Valores de face (sem desconto). Aplicar política comercial para calcular valor final.",
+    "duracao": "Em meses",
+    "tipo_valor": "Mensalidade durante a duração do curso",
+    "avaliacoes": "100% online",
+    "calendario": "Segue calendário de módulos igual graduação"
+  },
+  "cursos": [
+    {
+      "id": 1,
+      "nome": "Administração de Redes e Segurança da Informação",
+      "duracao": "12 meses",
+      "valor_face": 237.99
+    },
+    {
+      "id": 2,
+      "nome": "Algoritmo e Lógica da Programação",
+      "duracao": "6 meses",
+      "valor_face": 241.99
+    },
+    {
+      "id": 3,
+      "nome": "Assessoria Executiva",
+      "duracao": "12 meses",
+      "valor_face": 249.99
+    },
+    {
+      "id": 4,
+      "nome": "Assistente de Controle de Qualidade",
+      "duracao": "12 meses",
+      "valor_face": 233.99
+    },
+    {
+      "id": 5,
+      "nome": "Atendente de Farmácia",
+      "duracao": "12 meses",
+      "valor_face": 244.99
+    },
+    {
+      "id": 6,
+      "nome": "Auxiliar Administrativo",
+      "duracao": "12 meses",
+      "valor_face": 244.99
+    },
+    {
+      "id": 7,
+      "nome": "Auxiliar de Análise Contábil e Gestão Financeira",
+      "duracao": "12 meses",
+      "valor_face": 237.99
+    },
+    {
+      "id": 8,
+      "nome": "Auxiliar de Contabilidade",
+      "duracao": "12 meses",
+      "valor_face": 237.99
+    },
+    {
+      "id": 9,
+      "nome": "Auxiliar de Educação Digital",
+      "duracao": "12 meses",
+      "valor_face": 237.99
+    },
+    {
+      "id": 10,
+      "nome": "Auxiliar de Gestão Escolar",
+      "duracao": "9 meses",
+      "valor_face": 205.99
+    },
+    {
+      "id": 11,
+      "nome": "Auxiliar de Gestão Estratégica de Empresas",
+      "duracao": "9 meses",
+      "valor_face": 249.99
+    },
+    {
+      "id": 12,
+      "nome": "Auxiliar de Marketing",
+      "duracao": "12 meses",
+      "valor_face": 242.99
+    },
+    {
+      "id": 13,
+      "nome": "Auxiliar de Planejamento Financeiro, Crédito e Cobrança",
+      "duracao": "12 meses",
+      "valor_face": 249.99
+    },
+    {
+      "id": 14,
+      "nome": "Auxiliar de Práticas Pedagógicas Inovadoras",
+      "duracao": "9 meses",
+      "valor_face": 215.99
+    },
+    {
+      "id": 15,
+      "nome": "Auxiliar de Recursos Humanos",
+      "duracao": "12 meses",
+      "valor_face": 237.99
+    },
+    {
+      "id": 16,
+      "nome": "Auxiliar de Telemarketing",
+      "duracao": "12 meses",
+      "valor_face": 249.99
+    },
+    {
+      "id": 17,
+      "nome": "Auxiliar em Agronegócio",
+      "duracao": "9 meses",
+      "valor_face": 241.99
+    },
+    {
+      "id": 18,
+      "nome": "Auxiliar de Gerenciamento da Qualidade e Meio Ambiente",
+      "duracao": "9 meses",
+      "valor_face": 237.99
+    },
+    {
+      "id": 19,
+      "nome": "Auxiliar em Gerenciamento Imobiliário",
+      "duracao": "9 meses",
+      "valor_face": 237.99
+    },
+    {
+      "id": 20,
+      "nome": "Auxiliar em Gestão de Negócios Gastronômicos",
+      "duracao": "9 meses",
+      "valor_face": 233.99
+    },
+    {
+      "id": 21,
+      "nome": "Auxiliar em Gestão de TI",
+      "duracao": "12 meses",
+      "valor_face": 242.99
+    },
+    {
+      "id": 22,
+      "nome": "Auxiliar em Logística",
+      "duracao": "12 meses",
+      "valor_face": 237.99
+    },
+    {
+      "id": 23,
+      "nome": "Auxiliar em Treinamento e Desenvolvimento de Pessoas",
+      "duracao": "9 meses",
+      "valor_face": 242.99
+    },
+    {
+      "id": 24,
+      "nome": "Auxiliar Jurídico",
+      "duracao": "12 meses",
+      "valor_face": 244.99
+    },
+    {
+      "id": 25,
+      "nome": "Capacitação de Pessoas",
+      "duracao": "6 meses",
+      "valor_face": 237.99
+    },
+    {
+      "id": 26,
+      "nome": "Capacitação de Profissionais da Saúde",
+      "duracao": "12 meses",
+      "valor_face": 242.99
+    },
+    {
+      "id": 27,
+      "nome": "Clima e Governança Organizacional",
+      "duracao": "12 meses",
+      "valor_face": 241.99
+    },
+    {
+      "id": 28,
+      "nome": "Coaching e Desenvolvimento de Pessoas",
+      "duracao": "6 meses",
+      "valor_face": 248.99
+    },
+    {
+      "id": 29,
+      "nome": "Comércio Exterior",
+      "duracao": "12 meses",
+      "valor_face": 237.99
+    },
+    {
+      "id": 30,
+      "nome": "Confeitaria",
+      "duracao": "12 meses",
+      "valor_face": 248.99
+    },
+    {
+      "id": 31,
+      "nome": "Consultoria Política",
+      "duracao": "6 meses",
+      "valor_face": 241.99
+    },
+    {
+      "id": 32,
+      "nome": "Controle Ambiental",
+      "duracao": "12 meses",
+      "valor_face": 237.99
+    },
+    {
+      "id": 33,
+      "nome": "Desenvolvedor Mobile",
+      "duracao": "12 meses",
+      "valor_face": 237.99
+    },
+    {
+      "id": 34,
+      "nome": "Desenvolvimento de Pessoas: Uma Visão Pedagógica",
+      "duracao": "6 meses",
+      "valor_face": 212.99
+    },
+    {
+      "id": 35,
+      "nome": "Desenvolvimento Profissional e Estratégias de Carreira",
+      "duracao": "12 meses",
+      "valor_face": 242.99
+    },
+    {
+      "id": 36,
+      "nome": "Educação Corporativa",
+      "duracao": "12 meses",
+      "valor_face": 241.99
+    },
+    {
+      "id": 37,
+      "nome": "Empreendedorismo",
+      "duracao": "12 meses",
+      "valor_face": 237.99
+    },
+    {
+      "id": 38,
+      "nome": "Fechamento de Folha de Pagamento",
+      "duracao": "12 meses",
+      "valor_face": 253.99
+    },
+    {
+      "id": 39,
+      "nome": "Finanças Empresariais",
+      "duracao": "12 meses",
+      "valor_face": 241.99
+    },
+    {
+      "id": 40,
+      "nome": "Game Design",
+      "duracao": "12 meses",
+      "valor_face": 246.99
+    },
+    {
+      "id": 41,
+      "nome": "Gastronomia",
+      "duracao": "12 meses",
+      "valor_face": 260.99
+    },
+    {
+      "id": 42,
+      "nome": "Gerenciamento do Meio Ambiente",
+      "duracao": "6 meses",
+      "valor_face": 233.99
+    },
+    {
+      "id": 43,
+      "nome": "Gerenciamento Organizacional Estratégico",
+      "duracao": "6 meses",
+      "valor_face": 237.99
+    },
+    {
+      "id": 44,
+      "nome": "Gestão da Informação e do Conhecimento em Organizações",
+      "duracao": "6 meses",
+      "valor_face": 241.99
+    },
+    {
+      "id": 45,
+      "nome": "Gestão da Produção",
+      "duracao": "12 meses",
+      "valor_face": 242.99
+    },
+    {
+      "id": 46,
+      "nome": "Gestão da Qualidade e Ambiental",
+      "duracao": "6 meses",
+      "valor_face": 241.99
+    },
+    {
+      "id": 47,
+      "nome": "Gestão de Cooperativas",
+      "duracao": "12 meses",
+      "valor_face": 237.99
+    },
+    {
+      "id": 48,
+      "nome": "Gestão de Empresas Rurais e Agroindustriais",
+      "duracao": "6 meses",
+      "valor_face": 241.99
+    },
+    {
+      "id": 49,
+      "nome": "Gestão de Negócios com Ênfase em Finanças e Custos",
+      "duracao": "6 meses",
+      "valor_face": 241.99
+    },
+    {
+      "id": 50,
+      "nome": "Gestão de Negócios com Ênfase em Pessoas e Marketing",
+      "duracao": "6 meses",
+      "valor_face": 249.99
+    },
+    {
+      "id": 51,
+      "nome": "Gestão de Vendas",
+      "duracao": "12 meses",
+      "valor_face": 233.99
+    },
+    {
+      "id": 52,
+      "nome": "Gestão em Marketing Digital",
+      "duracao": "6 meses",
+      "valor_face": 237.99
+    },
+    {
+      "id": 53,
+      "nome": "Gestão Empresarial",
+      "duracao": "12 meses",
+      "valor_face": 242.99
+    },
+    {
+      "id": 54,
+      "nome": "Gestão Imobiliária",
+      "duracao": "6 meses",
+      "valor_face": 253.99
+    },
+    {
+      "id": 55,
+      "nome": "Informática Para Internet",
+      "duracao": "12 meses",
+      "valor_face": 242.99
+    },
+    {
+      "id": 56,
+      "nome": "Infraestrutura em TI",
+      "duracao": "12 meses",
+      "valor_face": 234.99
+    },
+    {
+      "id": 57,
+      "nome": "Inovações na Prática Docente",
+      "duracao": "6 meses",
+      "valor_face": 208.99
+    },
+    {
+      "id": 58,
+      "nome": "Logística nos Processos Produtivos",
+      "duracao": "6 meses",
+      "valor_face": 246.99
+    },
+    {
+      "id": 59,
+      "nome": "Logística Organizacional Estratégica",
+      "duracao": "6 meses",
+      "valor_face": 241.99
+    },
+    {
+      "id": 60,
+      "nome": "Marketing Digital e Tendências de Consumo",
+      "duracao": "12 meses",
+      "valor_face": 237.99
+    },
+    {
+      "id": 61,
+      "nome": "Matemática e Suas Aplicações no Tratamento de Dados",
+      "duracao": "6 meses",
+      "valor_face": 241.99
+    },
+    {
+      "id": 62,
+      "nome": "Mercado Financeiro",
+      "duracao": "6 meses",
+      "valor_face": 241.99
+    },
+    {
+      "id": 63,
+      "nome": "Mídias Digitais",
+      "duracao": "12 meses",
+      "valor_face": 233.99
+    },
+    {
+      "id": 64,
+      "nome": "Multifunções do Gestor Escolar",
+      "duracao": "6 meses",
+      "valor_face": 205.99
+    },
+    {
+      "id": 65,
+      "nome": "Noções Básicas de Desenvolvimento de Sistemas",
+      "duracao": "12 meses",
+      "valor_face": 229.99
+    },
+    {
+      "id": 66,
+      "nome": "Noções de Direito",
+      "duracao": "12 meses",
+      "valor_face": 242.99
+    },
+    {
+      "id": 67,
+      "nome": "Novas Abordagens de Gestão de Conflitos",
+      "duracao": "6 meses",
+      "valor_face": 241.99
+    },
+    {
+      "id": 68,
+      "nome": "Pacote Office",
+      "duracao": "12 meses",
+      "valor_face": 246.99
+    },
+    {
+      "id": 69,
+      "nome": "Planejamento e Controle de Produção",
+      "duracao": "12 meses",
+      "valor_face": 244.99
+    },
+    {
+      "id": 70,
+      "nome": "Planejamento e Fontes de Recursos de Empreendimentos Sociais",
+      "duracao": "6 meses",
+      "valor_face": 241.99
+    },
+    {
+      "id": 71,
+      "nome": "Políticas Públicas e o Acesso à Saúde",
+      "duracao": "6 meses",
+      "valor_face": 241.99
+    },
+    {
+      "id": 72,
+      "nome": "Práticas Fundamentais de Tecnologia em EAD",
+      "duracao": "6 meses",
+      "valor_face": 208.99
+    },
+    {
+      "id": 73,
+      "nome": "Práticas Sociais de Líderes em Instituições Religiosas",
+      "duracao": "6 meses",
+      "valor_face": 237.99
+    },
+    {
+      "id": 74,
+      "nome": "Princípios Básicos Para a Formação da Criança",
+      "duracao": "6 meses",
+      "valor_face": 208.99
+    },
+    {
+      "id": 75,
+      "nome": "Responsabilidade Social e Ambiental",
+      "duracao": "6 meses",
+      "valor_face": 241.99
+    },
+    {
+      "id": 76,
+      "nome": "Secretariado Executivo",
+      "duracao": "12 meses",
+      "valor_face": 249.99
+    },
+    {
+      "id": 77,
+      "nome": "Segurança Digital",
+      "duracao": "12 meses",
+      "valor_face": 237.99
+    },
+    {
+      "id": 78,
+      "nome": "Storytelling e Games com Unity",
+      "duracao": "6 meses",
+      "valor_face": 241.99
+    },
+    {
+      "id": 79,
+      "nome": "Telecomunicações",
+      "duracao": "12 meses",
+      "valor_face": 253.99
+    },
+    {
+      "id": 80,
+      "nome": "Tendências Gastronômicas",
+      "duracao": "6 meses",
+      "valor_face": 241.99
+    }
+  ]
+}

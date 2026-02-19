@@ -1,0 +1,116 @@
+{
+  "metadata": {
+    "versao": "1.0",
+    "data_geracao": "2025-12-19"
+  },
+  "ead": {
+    "descricao": "Maioria dos cursos de graduação",
+    "disciplina": {
+      "duracao": "5 semanas",
+      "simultaneas": 1
+    },
+    "por_modulo": 2,
+    "dedicacao": "2-3 horas/dia",
+    "material": [
+      "Livros digitais (alguns físicos)",
+      "Videoaulas gravadas",
+      "Aulas ao vivo semanais (ficam gravadas)",
+      "3-4 atividades no AVA",
+      "Prova presencial no polo"
+    ],
+    "provas": {
+      "tipo": "Presencial",
+      "local": "Polo",
+      "quando": "Última semana da disciplina",
+      "agendamento": "Aluno escolhe dia e horário"
+    }
+  },
+  "semipresencial": {
+    "descricao": "Cursos de saúde e engenharias",
+    "disciplinas": {
+      "simultaneas": "2-3",
+      "modulo": "~3 meses (10 semanas)"
+    },
+    "praticas_presenciais": {
+      "inicio": "A partir do 3º ano",
+      "frequencia": "1x por semana",
+      "periodo": "Geralmente noturno",
+      "local": "Laboratórios do polo"
+    },
+    "cursos": [
+      "Agronomia",
+      "Biomedicina",
+      "Eng. Ambiental e Sanitária",
+      "Eng. Civil",
+      "Eng. de Produção",
+      "Eng. Elétrica",
+      "Eng. Mecânica",
+      "Eng. Mecatrônica",
+      "Estética e Cosmética",
+      "Farmácia",
+      "Fisioterapia",
+      "Fonoaudiologia",
+      "Nutrição",
+      "Podologia",
+      "Radiologia",
+      "Terapia Ocupacional",
+      "Terapias Integrativas"
+    ]
+  },
+  "pos_graduacao": {
+    "avaliacoes": "100% online",
+    "inicio": "IMEDIATO após compensação do pagamento",
+    "duracao": "6 a 12 meses",
+    "parcelamento": "18x"
+  },
+  "profissionalizantes": {
+    "avaliacoes": "100% online",
+    "duracao": "6 a 12 meses",
+    "calendario": "Segue módulos igual graduação"
+  },
+  "tecnicos": {
+    "provas": "Presenciais no polo",
+    "duracao": "12 a 18 meses",
+    "calendario": "Segue módulos igual graduação"
+  },
+  "aprovacao": {
+    "nota_minima": 60,
+    "escala": "0 a 100",
+    "segunda_oportunidade": {
+      "descricao": "Nova prova com valor total da nota",
+      "quando": "Se não atingir 60 na primeira"
+    },
+    "reprovacao": {
+      "descricao": "Disciplina volta no mesmo módulo do ano seguinte",
+      "custo_adicional": false
+    }
+  },
+  "tcc": {
+    "obrigatoriedade": "Depende do curso (principalmente bacharelados e licenciaturas)",
+    "orientacao": "Professor orientador acompanha durante todo o processo",
+    "quando": "Último ano do curso, com disciplinas específicas"
+  },
+  "estagio": {
+    "obrigatorio": {
+      "descricao": "Faz parte da grade (alguns cursos)",
+      "documentacao": "Unicesumar fornece pelo AVA"
+    },
+    "nao_obrigatorio": {
+      "descricao": "Opcional, geralmente remunerado"
+    },
+    "convênios": "Várias empresas parceiras",
+    "campo_proprio": "Trabalho atual, empresas conhecidas - polo valida"
+  },
+  "documentacao_matricula": {
+    "basicos": [
+      "Certificado de Conclusão do Ensino Médio",
+      "Certidão de Nascimento ou Casamento",
+      "RG",
+      "CPF"
+    ],
+    "envio": {
+      "metodo": "100% digital pelo AVA",
+      "suporte": "Polo auxilia se necessário"
+    }
+  }
+}

@@ -1,0 +1,778 @@
+{
+  "metadata": {
+    "tipo": "graduacao",
+    "total_cursos": 106,
+    "versao": "1.0",
+    "data_geracao": "2025-12-19"
+  },
+  "observacoes": {
+    "valores": "Valores de face (sem desconto). Aplicar política comercial para calcular valor final.",
+    "duracao": "Em anos",
+    "tipo_valor": "Mensalidade contínua durante todo o curso",
+    "modalidade_ead": "100% online com provas presenciais no polo",
+    "modalidade_semipresencial": "Práticas presenciais a partir do 3º ano, 1x/semana, geralmente noturno"
+  },
+  "cursos_semipresenciais": [
+    "Agronomia",
+    "Biomedicina",
+    "Engenharia Ambiental e Sanitária",
+    "Engenharia Civil",
+    "Engenharia de Produção",
+    "Engenharia Elétrica",
+    "Engenharia Mecânica",
+    "Engenharia Mecatrônica",
+    "Estética e Cosmética",
+    "Farmácia",
+    "Fisioterapia",
+    "Fonoaudiologia",
+    "Nutrição",
+    "Podologia",
+    "Radiologia",
+    "Terapia Ocupacional",
+    "Terapias Integrativas e Complementares"
+  ],
+  "cursos": [
+    {
+      "id": 1,
+      "nome": "Acompanhamento do Transtorno do Espectro Autista",
+      "duracao": "2 anos",
+      "valor_face": 480.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 2,
+      "nome": "Administração",
+      "duracao": "4 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 3,
+      "nome": "Agronomia",
+      "duracao": "5 anos",
+      "valor_face": 875.99,
+      "modalidade": "Semipresencial"
+    },
+    {
+      "id": 4,
+      "nome": "Agrotecnologia",
+      "duracao": "2 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 5,
+      "nome": "Análise e Desenvolvimento de Sistemas",
+      "duracao": "2,5 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 6,
+      "nome": "Arquitetura e Urbanismo",
+      "duracao": "5 anos",
+      "valor_face": 735.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 7,
+      "nome": "Artes Visuais",
+      "duracao": "4 anos",
+      "valor_face": 480.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 8,
+      "nome": "Automação Industrial",
+      "duracao": "3 anos",
+      "valor_face": 558.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 9,
+      "nome": "Automação Residencial e Predial",
+      "duracao": "3 anos",
+      "valor_face": 557.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 10,
+      "nome": "Banco de Dados",
+      "duracao": "2,5 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 11,
+      "nome": "Bem-Estar Animal",
+      "duracao": "2 anos",
+      "valor_face": 557.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 12,
+      "nome": "Biblioteconomia",
+      "duracao": "3 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 13,
+      "nome": "Biomedicina",
+      "duracao": "4 anos",
+      "valor_face": 735.99,
+      "modalidade": "Semipresencial"
+    },
+    {
+      "id": 14,
+      "nome": "Ciência da Criatividade",
+      "duracao": "2 anos",
+      "valor_face": 544.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 15,
+      "nome": "Ciência da Felicidade",
+      "duracao": "2 anos",
+      "valor_face": 557.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 16,
+      "nome": "Ciências Biológicas",
+      "duracao": "4 anos",
+      "valor_face": 480.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 17,
+      "nome": "Ciências Contábeis",
+      "duracao": "4 anos",
+      "valor_face": 544.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 18,
+      "nome": "Ciências de Dados e Análise do Comportamento",
+      "duracao": "2,5 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 19,
+      "nome": "Ciências Econômicas",
+      "duracao": "4 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 20,
+      "nome": "Cinema e Audiovisual",
+      "duracao": "3,5 anos",
+      "valor_face": 557.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 21,
+      "nome": "Comércio Exterior",
+      "duracao": "2 anos",
+      "valor_face": 455.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 22,
+      "nome": "Criminologia",
+      "duracao": "2 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 23,
+      "nome": "Design de Animação",
+      "duracao": "2 anos",
+      "valor_face": 544.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 24,
+      "nome": "Design de Interiores",
+      "duracao": "2 anos",
+      "valor_face": 671.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 25,
+      "nome": "Design de Moda",
+      "duracao": "2 anos",
+      "valor_face": 671.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 26,
+      "nome": "Design de Produto",
+      "duracao": "2 anos",
+      "valor_face": 671.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 27,
+      "nome": "Design Gráfico",
+      "duracao": "2 anos",
+      "valor_face": 544.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 28,
+      "nome": "Design Musical",
+      "duracao": "2 anos",
+      "valor_face": 544.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 29,
+      "nome": "Educação Especial",
+      "duracao": "4 anos",
+      "valor_face": 480.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 30,
+      "nome": "Educação Física Bacharelado",
+      "duracao": "4 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 31,
+      "nome": "Educação Física Licenciatura",
+      "duracao": "4 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 32,
+      "nome": "Empreendedorismo",
+      "duracao": "2 anos",
+      "valor_face": 455.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 33,
+      "nome": "Energias Renováveis",
+      "duracao": "2,5 anos",
+      "valor_face": 558.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 34,
+      "nome": "Engenharia Ambiental e Sanitária",
+      "duracao": "5 anos",
+      "valor_face": 735.99,
+      "modalidade": "Semipresencial"
+    },
+    {
+      "id": 35,
+      "nome": "Engenharia Civil",
+      "duracao": "5 anos",
+      "valor_face": 875.99,
+      "modalidade": "Semipresencial"
+    },
+    {
+      "id": 36,
+      "nome": "Engenharia de Produção",
+      "duracao": "5 anos",
+      "valor_face": 875.99,
+      "modalidade": "Semipresencial"
+    },
+    {
+      "id": 37,
+      "nome": "Engenharia de Software",
+      "duracao": "4 anos",
+      "valor_face": 733.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 38,
+      "nome": "Engenharia Elétrica",
+      "duracao": "5 anos",
+      "valor_face": 875.99,
+      "modalidade": "Semipresencial"
+    },
+    {
+      "id": 39,
+      "nome": "Engenharia Mecânica",
+      "duracao": "5 anos",
+      "valor_face": 875.99,
+      "modalidade": "Semipresencial"
+    },
+    {
+      "id": 40,
+      "nome": "Engenharia Mecatrônica",
+      "duracao": "5 anos",
+      "valor_face": 875.99,
+      "modalidade": "Semipresencial"
+    },
+    {
+      "id": 41,
+      "nome": "Estética e Cosmética",
+      "duracao": "2,5 anos",
+      "valor_face": 558.99,
+      "modalidade": "Semipresencial"
+    },
+    {
+      "id": 42,
+      "nome": "Farmácia",
+      "duracao": "5 anos",
+      "valor_face": 735.99,
+      "modalidade": "Semipresencial"
+    },
+    {
+      "id": 43,
+      "nome": "Filosofia",
+      "duracao": "4 anos",
+      "valor_face": 480.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 44,
+      "nome": "Fisioterapia",
+      "duracao": "5 anos",
+      "valor_face": 735.99,
+      "modalidade": "Semipresencial"
+    },
+    {
+      "id": 45,
+      "nome": "Fonoaudiologia",
+      "duracao": "4 anos",
+      "valor_face": 735.99,
+      "modalidade": "Semipresencial"
+    },
+    {
+      "id": 46,
+      "nome": "Fotografia",
+      "duracao": "2 anos",
+      "valor_face": 455.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 47,
+      "nome": "Gastronomia",
+      "duracao": "2 anos",
+      "valor_face": 671.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 48,
+      "nome": "Geografia",
+      "duracao": "4 anos",
+      "valor_face": 480.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 49,
+      "nome": "Gerontologia",
+      "duracao": "2 anos",
+      "valor_face": 557.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 50,
+      "nome": "Gestão Ambiental",
+      "duracao": "2 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 51,
+      "nome": "Gestão Comercial",
+      "duracao": "2 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 52,
+      "nome": "Gestão de Produção Industrial",
+      "duracao": "3 anos",
+      "valor_face": 671.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 53,
+      "nome": "Gestão da Qualidade",
+      "duracao": "2 anos",
+      "valor_face": 455.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 54,
+      "nome": "Gestão de Saúde Pública",
+      "duracao": "2 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 55,
+      "nome": "Gestão da Tecnologia da Informação",
+      "duracao": "2,5 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 56,
+      "nome": "Gestão de Cooperativas",
+      "duracao": "2 anos",
+      "valor_face": 455.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 57,
+      "nome": "Gestão de E-Commerce",
+      "duracao": "2 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 58,
+      "nome": "Gestão de Farmácia",
+      "duracao": "2 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 59,
+      "nome": "Gestão de Investimento e Mercado Financeiro",
+      "duracao": "2 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 60,
+      "nome": "Gestão de Negócios Imobiliários",
+      "duracao": "2 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 61,
+      "nome": "Gestão de Recursos Humanos",
+      "duracao": "2 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 62,
+      "nome": "Gestão de Segurança Privada",
+      "duracao": "2 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 63,
+      "nome": "Gestão de Serviços Judiciais e Notariais",
+      "duracao": "2 anos",
+      "valor_face": 557.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 64,
+      "nome": "Gestão de Turismo",
+      "duracao": "2 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 65,
+      "nome": "Gestão do Agronegócio",
+      "duracao": "3 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 66,
+      "nome": "Gestão Financeira",
+      "duracao": "2 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 67,
+      "nome": "Gestão Hospitalar",
+      "duracao": "3 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 68,
+      "nome": "Gestão Pública",
+      "duracao": "2 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 69,
+      "nome": "História",
+      "duracao": "4 anos",
+      "valor_face": 480.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 70,
+      "nome": "Inteligência Artificial e Machine Learning",
+      "duracao": "2,5 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 71,
+      "nome": "Investigação Forense e Perícia Criminal",
+      "duracao": "2,5 anos",
+      "valor_face": 557.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 72,
+      "nome": "Jogos Digitais",
+      "duracao": "2,5 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 73,
+      "nome": "Jornalismo",
+      "duracao": "4 anos",
+      "valor_face": 557.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 74,
+      "nome": "Letras - Português/Inglês",
+      "duracao": "4 anos",
+      "valor_face": 480.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 75,
+      "nome": "Licenciatura em Dança",
+      "duracao": "4 anos",
+      "valor_face": 480.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 76,
+      "nome": "Licenciatura em Física",
+      "duracao": "4 anos",
+      "valor_face": 480.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 77,
+      "nome": "Licenciatura em Letras - Libras",
+      "duracao": "4 anos",
+      "valor_face": 480.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 78,
+      "nome": "Licenciatura em Música",
+      "duracao": "4 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 79,
+      "nome": "Licenciatura em Química",
+      "duracao": "4 anos",
+      "valor_face": 480.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 80,
+      "nome": "Licenciatura em Teatro",
+      "duracao": "4 anos",
+      "valor_face": 480.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 81,
+      "nome": "Logística",
+      "duracao": "2 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 82,
+      "nome": "Manutenção Industrial",
+      "duracao": "3 anos",
+      "valor_face": 558.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 83,
+      "nome": "Marketing",
+      "duracao": "2 anos",
+      "valor_face": 455.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 84,
+      "nome": "Matemática",
+      "duracao": "4 anos",
+      "valor_face": 480.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 85,
+      "nome": "Mídias Sociais e Digitais",
+      "duracao": "2 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 86,
+      "nome": "Negócios e Customer Experience",
+      "duracao": "2 anos",
+      "valor_face": 455.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 87,
+      "nome": "Nutrição",
+      "duracao": "4 anos",
+      "valor_face": 735.99,
+      "modalidade": "Semipresencial"
+    },
+    {
+      "id": 88,
+      "nome": "Pedagogia",
+      "duracao": "4 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 89,
+      "nome": "Podologia",
+      "duracao": "2,5 anos",
+      "valor_face": 558.99,
+      "modalidade": "Semipresencial"
+    },
+    {
+      "id": 90,
+      "nome": "Processos Gerenciais",
+      "duracao": "2 anos",
+      "valor_face": 544.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 91,
+      "nome": "Psicopedagogia",
+      "duracao": "4 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 92,
+      "nome": "Publicidade e Propaganda",
+      "duracao": "3,5 anos",
+      "valor_face": 557.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 93,
+      "nome": "Radiologia",
+      "duracao": "3 anos",
+      "valor_face": 735.99,
+      "modalidade": "Semipresencial"
+    },
+    {
+      "id": 94,
+      "nome": "Secretariado",
+      "duracao": "2 anos",
+      "valor_face": 455.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 95,
+      "nome": "Segurança Cibernética",
+      "duracao": "2,5 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 96,
+      "nome": "Redes de Computadores",
+      "duracao": "2,5 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 97,
+      "nome": "Relações Públicas",
+      "duracao": "4 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 98,
+      "nome": "Segurança do Trabalho",
+      "duracao": "3 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 99,
+      "nome": "Segurança Pública",
+      "duracao": "2 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 100,
+      "nome": "Serviço Social",
+      "duracao": "4 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 101,
+      "nome": "Sistemas Para Internet",
+      "duracao": "2,5 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 102,
+      "nome": "Sociologia",
+      "duracao": "4 anos",
+      "valor_face": 480.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 103,
+      "nome": "Superior Tecnólogo em Tecnologia de Alimentos",
+      "duracao": "2 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 104,
+      "nome": "Teologia",
+      "duracao": "3 anos",
+      "valor_face": 518.99,
+      "modalidade": "EAD"
+    },
+    {
+      "id": 105,
+      "nome": "Terapia Ocupacional",
+      "duracao": "4 anos",
+      "valor_face": 735.99,
+      "modalidade": "Semipresencial"
+    },
+    {
+      "id": 106,
+      "nome": "Terapias Integrativas e Complementares",
+      "duracao": "2 anos",
+      "valor_face": 558.99,
+      "modalidade": "Semipresencial"
+    }
+  ]
+}

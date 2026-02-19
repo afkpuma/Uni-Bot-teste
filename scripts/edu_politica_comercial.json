@@ -1,0 +1,115 @@
+{
+  "metadata": {
+    "versao": "1.0",
+    "data_geracao": "2025-12-19"
+  },
+  "estrutura_negociacao": {
+    "descricao": "Estratégia em duas ofertas progressivas",
+    "regra": "SEMPRE começar pela 1ª oferta. 2ª oferta SOMENTE se houver resistência ao preço."
+  },
+  "primeira_oferta": {
+    "desconto_promocional": "30%",
+    "desconto_pontualidade": "10%",
+    "formula": "valor_face × 0.70 × 0.90",
+    "multiplicador": 0.63,
+    "condicao": "Pagamento até dia 10",
+    "apresentacao": "Promoção limitada/sazonal",
+    "validade": "Todo o curso"
+  },
+  "segunda_oferta": {
+    "quando_usar": [
+      "Candidato diz está caro",
+      "Hesita ou pede desconto",
+      "Comparando com concorrente",
+      "Qualificado mas travou no preço"
+    ],
+    "desconto_especial": "40%",
+    "desconto_pontualidade": "10%",
+    "formula": "valor_face × 0.60 × 0.90",
+    "multiplicador": 0.54,
+    "apresentacao": "Condição exclusiva do supervisor",
+    "urgencia": true
+  },
+  "exemplos": [
+    {
+      "curso": "Administração",
+      "face": 518.99,
+      "oferta1": 326.96,
+      "oferta2": 280.25,
+      "economia": 46.71
+    },
+    {
+      "curso": "Pedagogia",
+      "face": 518.99,
+      "oferta1": 326.96,
+      "oferta2": 280.25,
+      "economia": 46.71
+    },
+    {
+      "curso": "Nutrição",
+      "face": 735.99,
+      "oferta1": 463.67,
+      "oferta2": 397.43,
+      "economia": 66.24
+    },
+    {
+      "curso": "Engenharia Civil",
+      "face": 875.99,
+      "oferta1": 551.87,
+      "oferta2": 473.03,
+      "economia": 78.84
+    }
+  ],
+  "reajuste_anual": {
+    "indice": "IGPM/INPC",
+    "faixa": "6% a 11%",
+    "sobre": "Valor já com desconto"
+  },
+  "regras": [
+    "SEMPRE começar pela 1ª oferta",
+    "2ª oferta só após resistência ao preço",
+    "Não há 3ª oferta",
+    "NUNCA mencionar 2ª oferta antes da hora"
+  ],
+  "matricula": {
+    "taxa": "NÃO cobramos taxa de matrícula",
+    "primeira_mensalidade": 39.9,
+    "pix": {
+      "chave": "50.399.473/0001-81",
+      "tipo": "CNPJ"
+    },
+    "boleto_cartao": "Transferir para humano"
+  },
+  "vencimento": {
+    "dia": 10,
+    "feriado": "Prorroga para próximo dia útil"
+  },
+  "formas_pagamento": [
+    "PIX",
+    "Boleto",
+    "Cartão Crédito",
+    "Cartão Débito",
+    "Crédito Recorrente",
+    "Débito Automático"
+  ],
+  "descontos_especiais": {
+    "ex_alunos": "+10% adicional",
+    "eu_indico_ead": "25%",
+    "eu_indico_semipresencial": "50%",
+    "financiamentos": "NÃO oferecemos FIES/Pravaler"
+  },
+  "gatilhos": {
+    "r39_90": [
+      "São apenas R$ 39,90 que separam você do seu diploma!",
+      "Menos que uma pizza para garantir seu futuro!"
+    ],
+    "urgencia": [
+      "Essa condição é válida só para matrículas feitas esta semana",
+      "A campanha tem prazo limitado"
+    ],
+    "exclusividade": [
+      "Consegui essa condição especial SÓ para você",
+      "Meu supervisor autorizou"
+    ]
+  }
+}
