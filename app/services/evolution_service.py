@@ -7,6 +7,22 @@ logger: logging.Logger = logging.getLogger("uvicorn")
 
 
 class EvolutionService:
+    _client: httpx.AsyncClient = None
+
+    @classmethod
+    def get_client(cls) -> httpx.AsyncClient:
+        """Retorna ou cria uma instância única do cliente HTTP."""
+        if cls._client is None or cls._client.is_closed:
+            cls._client = httpx.AsyncClient(timeout=30.0)
+        return cls._client
+
+    @classmethod
+    async def close_client(cls):
+        """Fecha a conexão do cliente HTTP."""
+        if cls._client and not cls._client.is_closed:
+            await cls._client.aclose()
+            logger.info("🔒 Conexão com Evolution API encerrada.")
+
     @staticmethod
     async def send_message(remote_jid: str, text: str) -> None:
         """Envia uma mensagem de texto via Evolution API."""
@@ -24,12 +40,13 @@ class EvolutionService:
         }
 
         try:
-            async with httpx.AsyncClient() as client:
-                response: httpx.Response = await client.post(url, json=payload, headers=headers)
-                if response.status_code != 201:
-                    logger.error(f"⚠️ Falha ao enviar mensagem: {response.text}")
-                else:
-                    logger.info(f"📤 Resposta enviada para {remote_jid}")
+            client = EvolutionService.get_client()
+            response: httpx.Response = await client.post(url, json=payload, headers=headers)
+            
+            if response.status_code != 201:
+                logger.error(f"⚠️ Falha ao enviar mensagem: {response.text}")
+            else:
+                logger.info(f"📤 Resposta enviada para {remote_jid}")
         except Exception as e:
             logger.error(f"❌ Erro ao conectar na Evolution API: {e}")
 
