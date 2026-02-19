@@ -6,8 +6,11 @@ from app.services.flowise_service import FlowiseService
 logger: logging.Logger = logging.getLogger("uvicorn")
 
 
+
+
 class EvolutionService:
     _client: httpx.AsyncClient = None
+    _headers: dict = None
 
     @classmethod
     def get_client(cls) -> httpx.AsyncClient:
@@ -15,6 +18,16 @@ class EvolutionService:
         if cls._client is None or cls._client.is_closed:
             cls._client = httpx.AsyncClient(timeout=30.0)
         return cls._client
+
+    @classmethod
+    def get_headers(cls) -> dict:
+        """Retorna os headers cacheados."""
+        if cls._headers is None:
+            cls._headers = {
+                "apikey": settings.EVOLUTION_API_TOKEN,
+                "Content-Type": "application/json"
+            }
+        return cls._headers
 
     @classmethod
     async def close_client(cls):
@@ -28,11 +41,6 @@ class EvolutionService:
         """Envia uma mensagem de texto via Evolution API."""
         url: str = f"{settings.EVOLUTION_API_URL}/message/sendText/{settings.INSTANCE_NAME}"
 
-        headers: dict = {
-            "apikey": settings.EVOLUTION_API_TOKEN,
-            "Content-Type": "application/json"
-        }
-
         payload: dict = {
             "number": remote_jid,
             "text": text,
@@ -41,6 +49,7 @@ class EvolutionService:
 
         try:
             client = EvolutionService.get_client()
+            headers = EvolutionService.get_headers()
             response: httpx.Response = await client.post(url, json=payload, headers=headers)
             
             if response.status_code != 201:
