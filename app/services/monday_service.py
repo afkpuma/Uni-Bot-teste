@@ -1,10 +1,24 @@
-import requests
+import logging
 import json
+from typing import Optional
+
+import httpx
 from app.core.config import settings
+from app.core.constants import COL_STATUS
+
+logger = logging.getLogger("uvicorn")
+
 
 class MondayService:
-    # ID da coluna de Status no board GESTAO BOT
-    STATUS_COLUMN_ID = "color_mm0hepv9"
+    _client = httpx.AsyncClient(timeout=10.0)
+    _api_url = settings.MONDAY_URL
+    _headers = {
+        "Authorization": settings.MONDAY_TOKEN,
+        "Content-Type": "application/json"
+    }
+
+    # Usa a constante centralizada de constants.py
+    STATUS_COLUMN_ID = COL_STATUS
 
     # Labels válidos para a coluna de Status
     VALID_STATUS_LABELS = [
@@ -14,26 +28,22 @@ class MondayService:
         "Atrasado",
     ]
 
-    def __init__(self) -> None:
-        self.headers: dict = {
-            "Authorization": settings.MONDAY_TOKEN,
-            "Content-Type": "application/json"
-        }
-        self.api_url: str = settings.MONDAY_URL
+    @staticmethod
+    async def send_query(query: str) -> dict:
+        """Função auxiliar que empacota o GraphQL e manda pro Monday."""
+        data = {"query": query}
+        response = await MondayService._client.post(
+            MondayService._api_url, json=data, headers=MondayService._headers
+        )
 
-    def send_query(self, query: str) -> dict:
-        """
-        Função auxiliar que empacota o GraphQL e manda pro Monday.
-        """
-        data: dict = {'query': query}
-        response: requests.Response = requests.post(self.api_url, json=data, headers=self.headers)
-        
         if response.status_code == 200:
             return response.json()
         else:
+            logger.error(f"⚠️ Erro Monday ({response.status_code}): {response.text}")
             raise Exception(f"Erro na API Monday: {response.text}")
 
-    def find_id_columns(self, board_id: int) -> dict:
+    @staticmethod
+    async def find_id_columns(board_id: int) -> dict:
         """
         Esta função serve APENAS para descobrirmos os nomes
         internos das colunas do seu quadro.
@@ -50,10 +60,11 @@ class MondayService:
             }
         }
         """ % board_id
-        
-        return self.send_query(query)
 
-    def get_items(self, board_id: int) -> list:
+        return await MondayService.send_query(query)
+
+    @staticmethod
+    async def get_items(board_id: int) -> list:
         """
         Retorna todos os itens de um quadro com seus IDs,
         nomes e valores das colunas.
@@ -75,10 +86,11 @@ class MondayService:
         }
         """ % board_id
 
-        resultado: dict = self.send_query(query)
+        resultado = await MondayService.send_query(query)
         return resultado["data"]["boards"][0]["items_page"]["items"]
 
-    def update_status(self, item_id: int, status_label: str, board_id: int = None) -> dict:
+    @staticmethod
+    async def update_status(item_id: int, status_label: str, board_id: Optional[int] = None) -> dict:
         """
         Atualiza o status de um item no quadro.
 
@@ -95,16 +107,14 @@ class MondayService:
             ValueError: Se o status_label não for válido.
             Exception: Se a API retornar erro.
         """
-        if status_label not in self.VALID_STATUS_LABELS:
+        if status_label not in MondayService.VALID_STATUS_LABELS:
             raise ValueError(
                 f"Status inválido: '{status_label}'. "
-                f"Valores permitidos: {self.VALID_STATUS_LABELS}"
+                f"Valores permitidos: {MondayService.VALID_STATUS_LABELS}"
             )
 
         if board_id is None:
             board_id = settings.MONDAY_BOARD_ID
-
-        column_value: str = json.dumps({"label": status_label})
 
         query = '''
         mutation {
@@ -118,38 +128,42 @@ class MondayService:
                 name
             }
         }
-        ''' % (board_id, item_id, self.STATUS_COLUMN_ID, status_label)
+        ''' % (board_id, item_id, MondayService.STATUS_COLUMN_ID, status_label)
 
-        return self.send_query(query)
+        return await MondayService.send_query(query)
 
 
 # --- BLOCO DE TESTE RÁPIDO ---
 if __name__ == "__main__":
-    MONDAY_BOARD_ID = settings.MONDAY_BOARD_ID
-    service = MondayService()
+    import asyncio
 
-    try:
-        # 1. Listar itens do board com status atual
-        print("=== Itens do board GESTAO BOT ===\n")
-        items = service.get_items(MONDAY_BOARD_ID)
+    async def main():
+        MONDAY_BOARD_ID = settings.MONDAY_BOARD_ID
 
-        if not items:
-            print("Nenhum item encontrado no board.")
-            print("Crie um item no Monday.com para testar.")
-        else:
-            for item in items:
-                status = next(
-                    (c["text"] for c in item["column_values"]
-                     if c["id"] == MondayService.STATUS_COLUMN_ID),
-                    "Sem status"
-                )
-                print(f"  ID: {item['id']} | Nome: {item['name']} | Status: {status}")
+        try:
+            # 1. Listar itens do board com status atual
+            print("=== Itens do board GESTAO BOT ===\n")
+            items = await MondayService.get_items(MONDAY_BOARD_ID)
 
-            # 2. Demonstrar alteração de status no primeiro item
-            primeiro = items[0]
-            print(f"\n=== Alterando status do item '{primeiro['name']}' para 'Em Progresso' ===\n")
-            resultado = service.update_status(int(primeiro["id"]), "Em Progresso")
-            print(json.dumps(resultado, indent=4, ensure_ascii=False))
+            if not items:
+                print("Nenhum item encontrado no board.")
+                print("Crie um item no Monday.com para testar.")
+            else:
+                for item in items:
+                    status = next(
+                        (c["text"] for c in item["column_values"]
+                         if c["id"] == MondayService.STATUS_COLUMN_ID),
+                        "Sem status"
+                    )
+                    print(f"  ID: {item['id']} | Nome: {item['name']} | Status: {status}")
 
-    except Exception as e:
-        print(f"Deu erro: {e}")
+                # 2. Demonstrar alteração de status no primeiro item
+                primeiro = items[0]
+                print(f"\n=== Alterando status do item '{primeiro['name']}' para 'Em Progresso' ===\n")
+                resultado = await MondayService.update_status(int(primeiro["id"]), "Em Progresso")
+                print(json.dumps(resultado, indent=4, ensure_ascii=False))
+
+        except Exception as e:
+            print(f"Deu erro: {e}")
+
+    asyncio.run(main())

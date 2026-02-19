@@ -1,6 +1,6 @@
 from typing import Optional
 
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter
 from app.services.kommo_service import KommoService
 from app.schemas.lead_schema import LeadSchema
 
@@ -9,11 +9,11 @@ router: APIRouter = APIRouter()
 
 
 @router.post("/leads")
-def criar_novo_lead(dados: LeadSchema, service: KommoService = Depends(KommoService)) -> dict:
-    # O FastAPI converte o JSON recebido para o objeto 'dados'
-    return service.create_lead(dados.nome, dados.price)
+async def create_lead(dados: LeadSchema) -> dict:
+    """Cria um novo lead na Kommo."""
+    return await KommoService.create_lead(dados.nome, dados.price)
 
 @router.get("/leads")
-def read_leads(busca: Optional[str] = None, service: KommoService = Depends(KommoService)) -> dict:
-    # Chama o serviço que conecta na Kommo
-    return service.get_leads(query=busca)
+async def read_leads(busca: Optional[str] = None) -> dict:
+    """Lista/busca leads na Kommo."""
+    return await KommoService.get_leads(query=busca)

@@ -4,6 +4,7 @@ Responsável APENAS por receber a requisição, extrair dados e delegar ao servi
 """
 import logging
 from fastapi import APIRouter, Request, BackgroundTasks
+from fastapi.responses import JSONResponse
 from app.services.evolution_service import EvolutionService
 
 logger: logging.Logger = logging.getLogger("uvicorn")
@@ -48,4 +49,4 @@ async def receive_webhook(request: Request, background_tasks: BackgroundTasks) -
 
     except Exception as e:
         logger.error(f"❌ Erro: {e}")
-        return {"status": "error"}
+        return JSONResponse(content={"status": "error"}, status_code=500)

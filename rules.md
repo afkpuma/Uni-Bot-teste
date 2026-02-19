@@ -36,6 +36,32 @@ NENHUMA linha de código é escrita sem antes passar pelas fases 1 e 2.
 3.  **Tratamento de Erros:** Sair graciosamente. Se o Monday falhar, o bot continua rodando.
 4.  **Logs:** Usar `logger.info()` em vez de `print()`.
 
+## ♻️ Persistência de Recursos (Regra Crítica)
+> **Nunca crie recursos caros dentro de funções chamadas por request.**
+
+Recursos como **HTTP clients, conexões de banco, SDK clients e regex compilada** devem ser criados **UMA única vez** (no nível da classe ou módulo) e reutilizados.
+
+```python
+# ❌ PROIBIDO — cria e destrói conexão a cada chamada
+async def enviar(dados):
+    async with httpx.AsyncClient() as client:
+        await client.post(url, json=dados)
+
+# ✅ CORRETO — client persistente, reutiliza conexão TCP/TLS
+class MeuService:
+    _client = httpx.AsyncClient(timeout=10.0)
+
+    async def enviar(self, dados):
+        await self._client.post(url, json=dados)
+```
+
+**Checklist antes de criar qualquer objeto dentro de uma função:**
+1. Esse objeto abre conexão de rede? → Mova para atributo de classe.
+2. Esse objeto leva tempo para inicializar (SDK, pool)? → Mova para atributo de classe.
+3. Esse objeto é sempre igual entre chamadas? → Mova para constante de módulo.
+
+---
+
 ## 📁 Estrutura de Pastas e Separação de Responsabilidades
 /app
   /controllers -> Apenas rotas HTTP. Recebe a requisição, extrai dados e delega ao service. ZERO lógica de negócio ou orquestração.
