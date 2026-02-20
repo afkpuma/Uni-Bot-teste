@@ -16,7 +16,7 @@ embeddings = GoogleGenerativeAIEmbeddings(
     model="models/gemini-embedding-001",
     google_api_key=GEMINI_API_KEY,
     task_type="RETRIEVAL_DOCUMENT",
-    dimensions=768
+    dimensions=3072
 )
 
 # --- Rate Limiting ---
@@ -39,7 +39,7 @@ def salvar_no_supabase(content, metadata, max_retries=3):
         try:
             rate_limit_check()
             vetor = embeddings.embed_query(content)
-            vetor = vetor[:768]  # Truncar para 768 dimensões
+            # Retirado o truncamento manual para permitir que os 3072 passem direto
             registro = {"content": content, "metadata": metadata, "embedding": vetor}
             supabase.table("documentos_unibot").insert(registro).execute()
             label = metadata.get('curso') or metadata.get('item') or metadata.get('fonte')
