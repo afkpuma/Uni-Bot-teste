@@ -8,9 +8,9 @@ Migrar a base de conhecimento estática (JSONs de Cursos, FAQs, Calendário) par
 2. **Fase Runtime (WhatsApp):** O FastAPI recebe a mensagem, envia para o Flowise. O Flowise converte a pergunta em embedding, busca os trechos mais relevantes no Supabase e usa o Llama 3.3 (Groq) para responder ao usuário.
 
 ## Tarefas (Checklist)
-- [ ] Criar a tabela `documentos_unibot` e a função de busca no SQL Editor do Supabase.
-- [ ] Criar pasta `scripts/` para isolar lógicas de ingestão de dados do FastAPI.
-- [ ] Implementar `scripts/ingestao_dados.py` para processar os JSONs.
-- [ ] Configurar variáveis de ambiente (`SUPABASE_URL`, `SUPABASE_SERVICE_KEY`, `GEMINI_API_KEY`).
-- [ ] Atualizar `requirements.txt`.
-- [ ] Configurar novo Chatflow no Flowise (Conversational Retrieval QA Chain + nó Supabase).
+- [x] Criar a tabela `documentos_unibot` e a função de busca no SQL Editor do Supabase.
+- [x] Criar pasta `scripts/` para isolar lógicas de ingestão de dados do FastAPI.
+- [x] Implementar `scripts/ingestao_dados.py` para processar os JSONs.
+- [x] Configurar variáveis de ambiente (`SUPABASE_URL`, `SUPABASE_SERVICE_KEY`, `GEMINI_API_KEY`).
+- [x] Atualizar `requirements.txt`.
+- [x] Configurar novo Chatflow no Flowise (Conversational Retrieval QA Chain + nó Supabase).
