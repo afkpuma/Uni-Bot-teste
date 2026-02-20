@@ -16,6 +16,11 @@ class Settings(BaseSettings):
     EVOLUTION_API_TOKEN: str
     INSTANCE_NAME: str
 
+    # Gemini & Supabase (RAG)
+    GEMINI_API_KEY: str | None = None
+    SUPABASE_URL: str | None = None
+    SUPABASE_SERVICE_KEY: str | None = None
+
     class Config:
         env_file = ".env"
         extra = "ignore"
