@@ -44,6 +44,10 @@ class FlowiseService:
             result: dict = response.json()
             return result.get("text", "Desculpe, não consegui processar sua resposta.")
 
+        except httpx.HTTPStatusError as e:
+            error_details = e.response.text
+            logger.error(f"❌ Erro HTTP {e.response.status_code} no Flowise: {error_details}")
+            return "Estou com uma pequena instabilidade no meu cérebro agora. Tente novamente em instantes."
         except Exception as e:
-            logger.error(f"❌ Erro no Flowise: {e}")
+            logger.error(f"❌ Erro inesperado no Flowise: {repr(e)}")
             return "Estou com uma pequena instabilidade no meu cérebro agora. Tente novamente em instantes."
