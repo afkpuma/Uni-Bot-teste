@@ -13,7 +13,7 @@ class FlowiseService:
     def get_client(cls) -> httpx.AsyncClient:
         """Retorna ou cria uma instância única do cliente HTTP."""
         if cls._client is None or cls._client.is_closed:
-            cls._client = httpx.AsyncClient(timeout=30.0)
+            cls._client = httpx.AsyncClient(timeout=120.0)
         return cls._client
 
     @classmethod
@@ -36,7 +36,7 @@ class FlowiseService:
             response: httpx.Response = await client.post(
                 settings.FLOWISE_API_URL,
                 json=payload,
-                timeout=30.0  # IA pode demorar um pouco para pensar
+                timeout=120.0  # IA (Groq free) e banco de dados podem demorar para pensar
             )
             response.raise_for_status()
 
